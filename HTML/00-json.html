@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using JSON</title>
+</head>
+
+<body>
+    <h2>This is 00-json.html</h2>
+    <h2>Open DEV TOOLS > CONSOLE to view output.</h2>
+    <script>
+        // create a JavaScript Object - this is not a JSON Object
+        var data = {
+            wordcamp: 'VIENNA'
+        }
+        // typeof returns data type
+        console.log("");
+        console.log("data is an " + typeof data);
+        console.log(data);
+        console.log("This is the " + data.wordcamp + " WordCamp.");
+
+        var JSONObject = {
+            "wordcamp": "VIENNA"
+        }
+        // typeof returns data type
+        console.log("");
+        console.log("JSONObject is an " + typeof JSONObject);
+        console.log(JSONObject);
+        console.log("This is the " + JSONObject.wordcamp + " WordCamp.");
+
+        // Convert JSON OBJECT to a JSON-Like STRING
+        console.log("");
+        console.log("=== STRINGIFY JSON ===");
+        var dataString = JSON.stringify(data);
+        console.log("dataString is a " + typeof dataString);
+        console.log(dataString);
+        console.log("dataString.wordcamp = " + dataString.wordcamp);
+
+        // Convert a JSON-Like STRING to an JSON OBJECT
+        console.log("");
+        console.log("=== PARSE STRING===");
+        var dataPARSE = JSON.parse(dataString);
+        console.log("dataPARSE is an " + typeof dataPARSE);
+        console.log(dataPARSE);
+        console.log("This is the result of JSON.parse(): " + dataPARSE.wordcamp + " WordCamp.");
+
+        // Convert a JavaScript Object to a JSON Object if it is not formatted as JSON to start with
+        data = JSON.stringify(data);
+        data = JSON.parse(data);
+        console.log("");
+        console.log("===  JS Object -> STRINGIFY -> PARSE ===");
+        console.log("data is an " + typeof data);
+        console.log(data);
+    </script>
+</body>
+
+</html>

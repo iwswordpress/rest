@@ -1,0 +1,874 @@
+[{
+        "id": 1220,
+        "date": "2019-12-23T19:20:33",
+        "date_gmt": "2019-12-23T19:20:33",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1220"
+        },
+        "modified": "2019-12-23T19:20:34",
+        "modified_gmt": "2019-12-23T19:20:34",
+        "slug": "another-wp-search-post",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/another-wp-search-post/",
+        "title": {
+            "rendered": "[LOCAL DATASET] Another WP-SEARCH post"
+        },
+        "content": {
+            "rendered": "\n<p>This is another post with search term WP-SEARCH.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>This is another post with search term WP-SEARCH.</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            2
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1220"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1220"
+            }],
+            "version-history": [{
+                "count": 1,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1220/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1221,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1220/revisions/1221"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1220"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1220"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1220"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1218,
+        "date": "2019-12-23T19:19:29",
+        "date_gmt": "2019-12-23T19:19:29",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1218"
+        },
+        "modified": "2020-01-07T04:09:51",
+        "modified_gmt": "2020-01-07T04:09:51",
+        "slug": "wp-search",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/wp-search/",
+        "title": {
+            "rendered": "What is &#39;FUGU&#39;?"
+        },
+        "content": {
+            "rendered": "\n<figure class=\"wp-block-image size-large\"><img src=\"https://wpjs.co.uk/wpb/wp-content/uploads/fugu.jpg\" alt=\"\" class=\"wp-image-1246\" srcset=\"https://wpjs.co.uk/wpb/wp-content/uploads/fugu.jpg 303w, https://wpjs.co.uk/wpb/wp-content/uploads/fugu-300x164.jpg 300w\" sizes=\"(max-width: 303px) 100vw, 303px\" /><figcaption>A Fugu fish</figcaption></figure>\n\n\n\n<p>Google has created &#8216;Project Fugu&#8217; that is focused on making Progressive Web Apps as functional as Native Apps.</p>\n\n\n\n<p>Fugu can be lethally poisonous due to its tetrodotoxin; and, it must be carefully prepared to remove toxic parts and to avoid contaminating the meat.</p>\n\n\n\n<p>Thus, if correctly prepared, it is delicious. If not, deadly.</p>\n\n\n\n<p>This is how Google views PWAs. If done right they will be awesome. If not they will have devastating effects.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Google has created &#8216;Project Fugu&#8217; that is focused on making Progressive Web Apps as functional as Native Apps. Fugu can be lethally poisonous due to its tetrodotoxin; and, it must be carefully prepared to remove toxic parts and to avoid contaminating the meat. Thus, if correctly prepared, it is delicious. If not, deadly. This is how [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            24
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1218"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1218"
+            }],
+            "version-history": [{
+                "count": 6,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1218/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1248,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1218/revisions/1248"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1218"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1218"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1218"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1142,
+        "date": "2019-09-24T11:19:10",
+        "date_gmt": "2019-09-24T11:19:10",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1142"
+        },
+        "modified": "2019-10-10T07:09:25",
+        "modified_gmt": "2019-10-10T07:09:25",
+        "slug": "gutenberg-sample-01",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/gutenberg-sample-01/",
+        "title": {
+            "rendered": "Gutenberg Sample 01"
+        },
+        "content": {
+            "rendered": "\n<p><a href=\"https://wpjs.co.uk/wpb/wp-json/udemy/v1/latest-posts/25\">https://wpjs.co.uk/wpb/wp-json/udemy/v1/latest-posts/25</a></p>\n\n\n\n<p><a href=\"https://github.com/WordPress/WordPress/tree/master/wp-includes/css/dist/block-library\">https://github.com/WordPress/WordPress/tree/master/wp-includes/css/dist/block-library</a></p>\n\n\n\n<p>Outputting Gutenberg blocks from  https://wpjs.co.uk/wpb/wp-json/wp/v2/posts?categories=25</p>\n\n\n\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"Wordpress JSON REST API Tutorial for beginners(#14) Register Methods Types in Custom Rest Route WP\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/videoseries?list=PLT9miexWCpPU3TtDIVxA765dh2MaJY5X3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</div></figure>\n\n\n<div class=\"wp-block-calendar aligncenter\"><table id=\"wp-calendar\">\n\t<caption>January 2020</caption>\n\t<thead>\n\t<tr>\n\t\t<th scope=\"col\" title=\"Monday\">M</th>\n\t\t<th scope=\"col\" title=\"Tuesday\">T</th>\n\t\t<th scope=\"col\" title=\"Wednesday\">W</th>\n\t\t<th scope=\"col\" title=\"Thursday\">T</th>\n\t\t<th scope=\"col\" title=\"Friday\">F</th>\n\t\t<th scope=\"col\" title=\"Saturday\">S</th>\n\t\t<th scope=\"col\" title=\"Sunday\">S</th>\n\t</tr>\n\t</thead>\n\n\t<tfoot>\n\t<tr>\n\t\t<td colspan=\"3\" id=\"prev\"><a href=\"https://wpjs.co.uk/wpb/2019/12/\">&laquo; Dec</a></td>\n\t\t<td class=\"pad\">&nbsp;</td>\n\t\t<td colspan=\"3\" id=\"next\" class=\"pad\">&nbsp;</td>\n\t</tr>\n\t</tfoot>\n\n\t<tbody>\n\t<tr>\n\t\t<td colspan=\"2\" class=\"pad\">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>\n\t</tr>\n\t<tr>\n\t\t<td>6</td><td id=\"today\">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>\n\t</tr>\n\t<tr>\n\t\t<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>\n\t</tr>\n\t<tr>\n\t\t<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>\n\t</tr>\n\t<tr>\n\t\t<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>\n\t\t<td class=\"pad\" colspan=\"2\">&nbsp;</td>\n\t</tr>\n\t</tbody>\n\t</table></div>\n\n<ul class=\"wp-block-categories wp-block-categories-list\">\t<li class=\"cat-item cat-item-7\"><a href=\"https://wpjs.co.uk/wpb/category/cors/\">CORS</a>\n</li>\n\t<li class=\"cat-item cat-item-6\"><a href=\"https://wpjs.co.uk/wpb/category/decoupled-wp/\">DECOUPLED WP</a>\n</li>\n\t<li class=\"cat-item cat-item-24\"><a href=\"https://wpjs.co.uk/wpb/category/dummy-articles/\">DUMMY ARTICLES</a>\n</li>\n\t<li class=\"cat-item cat-item-26\"><a href=\"https://wpjs.co.uk/wpb/category/frontpage/\">frontpage</a>\n</li>\n\t<li class=\"cat-item cat-item-8\"><a href=\"https://wpjs.co.uk/wpb/category/references/\">REFERENCES</a>\n</li>\n\t<li class=\"cat-item cat-item-5\"><a href=\"https://wpjs.co.uk/wpb/category/rest-api/\">REST-API</a>\n</li>\n\t<li class=\"cat-item cat-item-2\"><a href=\"https://wpjs.co.uk/wpb/category/site-set-up/\">SITE SET UP</a>\n</li>\n\t<li class=\"cat-item cat-item-25\"><a href=\"https://wpjs.co.uk/wpb/category/wpbtn/\">WPBTN</a>\n</li>\n</ul>\n\n<p class=\"wp-block-tag-cloud\"><a href=\"https://wpjs.co.uk/wpb/tag/tag1/\" class=\"tag-cloud-link tag-link-17 tag-link-position-1\" style=\"font-size: 22pt;\" aria-label=\"tag1 (4 items)\">tag1</a>\n<a href=\"https://wpjs.co.uk/wpb/tag/tag2/\" class=\"tag-cloud-link tag-link-18 tag-link-position-2\" style=\"font-size: 22pt;\" aria-label=\"tag2 (4 items)\">tag2</a>\n<a href=\"https://wpjs.co.uk/wpb/tag/tag3/\" class=\"tag-cloud-link tag-link-19 tag-link-position-3\" style=\"font-size: 14.3pt;\" aria-label=\"tag3 (2 items)\">tag3</a>\n<a href=\"https://wpjs.co.uk/wpb/tag/tag4/\" class=\"tag-cloud-link tag-link-20 tag-link-position-4\" style=\"font-size: 8pt;\" aria-label=\"tag4 (1 item)\">tag4</a>\n<a href=\"https://wpjs.co.uk/wpb/tag/tag5/\" class=\"tag-cloud-link tag-link-21 tag-link-position-5\" style=\"font-size: 18.5pt;\" aria-label=\"tag5 (3 items)\">tag5</a>\n<a href=\"https://wpjs.co.uk/wpb/tag/tag6/\" class=\"tag-cloud-link tag-link-22 tag-link-position-6\" style=\"font-size: 8pt;\" aria-label=\"tag6 (1 item)\">tag6</a>\n<a href=\"https://wpjs.co.uk/wpb/tag/tag7/\" class=\"tag-cloud-link tag-link-23 tag-link-position-7\" style=\"font-size: 14.3pt;\" aria-label=\"tag7 (2 items)\">tag7</a></p>",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>https://wpjs.co.uk/wpb/wp-json/udemy/v1/latest-posts/25 https://github.com/WordPress/WordPress/tree/master/wp-includes/css/dist/block-library Outputting Gutenberg blocks from https://wpjs.co.uk/wpb/wp-json/wp/v2/posts?categories=25</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            25
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": "We have added ACF support using ACF TO REST plugin"
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1142"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1142"
+            }],
+            "version-history": [{
+                "count": 15,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1142/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1180,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1142/revisions/1180"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1142"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1142"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1142"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1129,
+        "date": "2019-09-13T06:33:46",
+        "date_gmt": "2019-09-13T06:33:46",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1129"
+        },
+        "modified": "2019-12-16T12:26:46",
+        "modified_gmt": "2019-12-16T12:26:46",
+        "slug": "1129-2",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/1129-2/",
+        "title": {
+            "rendered": "SAMPLE GUTENBEG"
+        },
+        "content": {
+            "rendered": "\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"Optimise your code: load code at the right time\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/eDd6Y6Z50Mg?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</div></figure>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 13,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            2
+        ],
+        "tags": [],
+        "authorName": "Craig W",
+        "acf": {
+            "source": "ACF supported in REST using ACF to REST plugin"
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1129"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/13"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1129"
+            }],
+            "version-history": [{
+                "count": 3,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1129/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1181,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1129/revisions/1181"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1129"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1129"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1129"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1094,
+        "date": "2019-06-30T04:56:10",
+        "date_gmt": "2019-06-30T04:56:10",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1094"
+        },
+        "modified": "2019-08-12T13:32:30",
+        "modified_gmt": "2019-08-12T13:32:30",
+        "slug": "www-coredna-com-blogs-headless-vs-decoupled-cms",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/www-coredna-com-blogs-headless-vs-decoupled-cms/",
+        "title": {
+            "rendered": "www.coredna.com/blogs/headless-vs-decoupled-cms"
+        },
+        "content": {
+            "rendered": "\n<figure class=\"wp-block-embed\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.coredna.com/blogs/headless-vs-decoupled-cms#3\n</div></figure>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            8
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1094"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1094"
+            }],
+            "version-history": [{
+                "count": 1,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1094/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1096,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1094/revisions/1096"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1094"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1094"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1094"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1092,
+        "date": "2019-06-30T04:54:07",
+        "date_gmt": "2019-06-30T04:54:07",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1092"
+        },
+        "modified": "2019-06-30T04:54:12",
+        "modified_gmt": "2019-06-30T04:54:12",
+        "slug": "wptavern-com-decoupling-wordpress",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/wptavern-com-decoupling-wordpress/",
+        "title": {
+            "rendered": "wptavern.com/decoupling-wordpress"
+        },
+        "content": {
+            "rendered": "\n<figure class=\"wp-block-embed-wordpress wp-block-embed is-type-wp-embed is-provider-wordpress-tavern\"><div class=\"wp-block-embed__wrapper\">\n<blockquote class=\"wp-embedded-content\" data-secret=\"yvR1NGKIKy\"><a href=\"https://wptavern.com/decoupling-wordpress\">A Look at Why Some Frontend Developers are Decoupling WordPress</a></blockquote><iframe title=\"&#8220;A Look at Why Some Frontend Developers are Decoupling WordPress&#8221; &#8212; WordPress Tavern\" class=\"wp-embedded-content\" sandbox=\"allow-scripts\" security=\"restricted\" style=\"position: absolute; clip: rect(1px, 1px, 1px, 1px);\" src=\"https://wptavern.com/decoupling-wordpress/embed#?secret=yvR1NGKIKy\" data-secret=\"yvR1NGKIKy\" width=\"600\" height=\"338\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>\n</div></figure>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            2
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1092"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1092"
+            }],
+            "version-history": [{
+                "count": 1,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1092/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1093,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1092/revisions/1093"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1092"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1092"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1092"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1060,
+        "date": "2019-06-16T10:52:21",
+        "date_gmt": "2019-06-16T10:52:21",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1060"
+        },
+        "modified": "2020-01-02T20:19:00",
+        "modified_gmt": "2020-01-02T20:19:00",
+        "slug": "blog-web-component",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/blog-web-component/",
+        "title": {
+            "rendered": "BLOG WEB COMPONENT"
+        },
+        "content": {
+            "rendered": "\n<p>This Blog Web Component lists all posts for a selected category.</p>\n\n\n\n<p>The array of posts is held in a JavaScript Array in browser memory so will seem to load posts instantly.</p>\n\n\n\n<p>Anything under 100ms is deemed &#8216;instant&#8217; by the brain.</p>\n\n\n\n<p>Provided the user stays on this page, all posts will be accessible even if OFFLINE.</p>\n\n\n\n<p>It is therefore possible to load many categories and posts.</p>\n\n\n\n<p>This is best done with IndexedDB which will give instant load too.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>This Blog Web Component lists all posts for a selected category. The array of posts is held in a JavaScript Array in browser memory so will seem to load posts instantly. Anything under 100ms is deemed &#8216;instant&#8217; by the brain. Provided the user stays on this page, all posts will be accessible even if OFFLINE. [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            5,
+            25
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1060"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1060"
+            }],
+            "version-history": [{
+                "count": 9,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1060/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1245,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1060/revisions/1245"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1060"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1060"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1060"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1054,
+        "date": "2019-06-15T12:48:53",
+        "date_gmt": "2019-06-15T12:48:53",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1054"
+        },
+        "modified": "2020-01-07T05:10:00",
+        "modified_gmt": "2020-01-07T05:10:00",
+        "slug": "what-makes-an-api-restful",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/what-makes-an-api-restful/",
+        "title": {
+            "rendered": "What makes an API RESTful?"
+        },
+        "content": {
+            "rendered": "\n<p><a href=\"https://blog.readme.io/the-history-of-rest-apis/\">https://blog.readme.io/the-history-of-rest-apis/</a></p>\n\n\n\n<p><strong>The Birth of REST: Roy Fielding&#8217;s Dissertation</strong></p>\n\n\n\n<p>In 2000, Roy Fielding and his colleagues had one objective: create a standard so that any server could talk to any other server in the world. Here&#8217;s what he came up with in his&nbsp;<a href=\"http://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm\">doctoral dissertation</a>:</p>\n\n\n\n<blockquote class=\"wp-block-quote\"><p>I had comments from well over 500 developers, many of whom were distinguished engineers with decades of experience, and I had to explain everything from the most abstract notions of Web interaction to the finest details of HTTP syntax.&nbsp;<strong>That process honed my model down to a core set of principles, properties, and constraints that are now called REST.</strong></p></blockquote>\n\n\n<h2>What makes an API RESTful?</h2>\n<p><b>So what do these mean?</b></p>\n<ul>\n<li><strong>Uniform interface: </strong>This means we use HTTP verbs (GET, PUT, POST, DELETE). We use URIs as our resources. And we get an HTTP response with a status and a body.</li>\n<li><strong>Stateless.</strong> This means each request is self-descriptive, and has enough context for the server to process that message.</li>\n<li><strong>Client-server.:</strong>There has to be clear boundaries between roles of the two two systems. One server, operationally, <em>has</em> to function as the server that is being called, and the other <em>has</em> to function as the one making the requests.</li>\n<li><strong>Cacheable: </strong>Unless denoted, a client can cache any representation. This is possible thanks to the statelessness—every representation is self-descriptive.</li>\n<li><b>Layered System: </b>A Layered System employs several independent layers to develop and extend the interface. As layers cannot see into each other, new requests and middleware can be inserted that will not have an impact on the initial commands and the client-server functioning.  Thus if the bits in the middle change, the client still only needs the original URL to fulfil its request.</li>\n<li><b>Code on demand: </b>This is optional and just means client can change its code as it wishes and is independent of the server logic.</li>\n</ul>\n<p><strong>IN ESSENCE</strong></p>\n<p>If we are using HTTP and URLs then our APIs are essentially RESTful in spirit if not by letter.</p>\n<p>As far as our clients are concerned, they just need to know the URL and parameters to get data in a known format and know that whatever changes take place in the middle or at the server, they need not change their code.</p>",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>https://blog.readme.io/the-history-of-rest-apis/ The Birth of REST: Roy Fielding&#8217;s Dissertation In 2000, Roy Fielding and his colleagues had one objective: create a standard so that any server could talk to any other server in the world. Here&#8217;s what he came up with in his&nbsp;doctoral dissertation: I had comments from well over 500 developers, many of whom were [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            5,
+            25
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1054"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1054"
+            }],
+            "version-history": [{
+                "count": 3,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1054/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1069,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1054/revisions/1069"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1054"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1054"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1054"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1052,
+        "date": "2019-06-15T12:48:09",
+        "date_gmt": "2019-06-15T12:48:09",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1052"
+        },
+        "modified": "2019-08-12T13:31:06",
+        "modified_gmt": "2019-08-12T13:31:06",
+        "slug": "what-is-an-endpoint",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/what-is-an-endpoint/",
+        "title": {
+            "rendered": "What is an ENDPOINT?"
+        },
+        "content": {
+            "rendered": "\n<p>An ENDPOINT is an API that gives us a resource based on a URL.</p>\n\n\n\n<p>There are a number of HTTP methods (verbs) like GET, POST, PUT, DELETE and so on.</p>\n\n\n\n<p></p>\n\n\n\n<p>Strictly speaking an ENDPOINT is:</p>\n\n\n\n<p>HTTP_VERB + URL = ENDPOINT</p>\n\n\n\n<p>In the WP built in REST API, we have one URL that can be used in two ways &#8211; GET data or POST data:</p>\n\n\n\n<p><a href=\"https://wpjs.co.uk/wpb/wp-json/wp/v2/posts\">https://wpjs.co.uk/wpb/wp-json/wp/v2/posts</a></p>\n\n\n\n<p>Thus POST + the URL above = ENDPOINT 1</p>\n\n\n\n<p>GET + the URL above = ENDPOINT 2</p>\n\n\n\n<p>We can use the term ENDPOINT /RESOURCE/API loosely although strictly speaking the choice might be incorrect.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>An ENDPOINT is an API that gives us a resource based on a URL. There are a number of HTTP methods (verbs) like GET, POST, PUT, DELETE and so on. Strictly speaking an ENDPOINT is: HTTP_VERB + URL = ENDPOINT In the WP built in REST API, we have one URL that can be used [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            5,
+            25
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1052"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1052"
+            }],
+            "version-history": [{
+                "count": 4,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1052/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1068,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1052/revisions/1068"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1052"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1052"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1052"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 1050,
+        "date": "2019-06-15T12:47:53",
+        "date_gmt": "2019-06-15T12:47:53",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=1050"
+        },
+        "modified": "2019-06-15T12:47:54",
+        "modified_gmt": "2019-06-15T12:47:54",
+        "slug": "what-is-an-api",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/what-is-an-api/",
+        "title": {
+            "rendered": "[LOCAL DATASET] What is an API?"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            5
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1050"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=1050"
+            }],
+            "version-history": [{
+                "count": 1,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1050/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1051,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/1050/revisions/1051"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=1050"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=1050"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=1050"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    }
+]

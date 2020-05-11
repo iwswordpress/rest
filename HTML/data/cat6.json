@@ -1,0 +1,873 @@
+[{
+        "id": 955,
+        "date": "2019-06-03T05:13:48",
+        "date_gmt": "2019-06-03T05:13:48",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=955"
+        },
+        "modified": "2019-08-12T13:31:29",
+        "modified_gmt": "2019-08-12T13:31:29",
+        "slug": "session-vs-local-storage",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/session-vs-local-storage/",
+        "title": {
+            "rendered": "[LOCAL DATASET] Session vs Local Storage"
+        },
+        "content": {
+            "rendered": "\n<p>We store the JWT in local rather than session storage because if the user opens a new window or a new tab the token is not available.</p>\n\n\n\n<figure class=\"wp-block-image\"><img src=\"https://wpjs.co.uk/wpb/wp-content/uploads/session-storage2.png\" alt=\"\" class=\"wp-image-1070\" srcset=\"https://wpjs.co.uk/wpb/wp-content/uploads/session-storage2.png 714w, https://wpjs.co.uk/wpb/wp-content/uploads/session-storage2-300x123.png 300w\" sizes=\"(max-width: 714px) 100vw, 714px\" /></figure>\n\n\n\n<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage\">https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage</a></p>\n\n\n\n<p>By storing the creation date of the JWT in our database, we can add an expiration policy, forcing the user to login again on a subsequent visit.</p>\n\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>We store the JWT in local rather than session storage because if the user opens a new window or a new tab the token is not available. https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage By storing the creation date of the JWT in our database, we can add an expiration policy, forcing the user to login again on a subsequent visit.</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6,
+            25
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": ""
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/955"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=955"
+            }],
+            "version-history": [{
+                "count": 2,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/955/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 1071,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/955/revisions/1071"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=955"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=955"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=955"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 623,
+        "date": "2019-05-22T09:20:10",
+        "date_gmt": "2019-05-22T09:20:10",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=623"
+        },
+        "modified": "2019-06-02T12:10:26",
+        "modified_gmt": "2019-06-02T12:10:26",
+        "slug": "posts-comments-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/posts-comments-page/",
+        "title": {
+            "rendered": "03-2 POSTS &#038; COMMENTS PAGE"
+        },
+        "content": {
+            "rendered": "<p>This uses the <strong>wpquery01 endpoint</strong>.</p>\n\n\n<p>Using WP_Query and WP_Comments we can construct output to list the post and comments.</p>\n\n\n\n<p>If the user is authorised, ($AUTH == 1 ), then a comment input field is available.</p>\n\n\n\n<p>This uses the <strong>insert-comment endpoint</strong> to add a comment and we reload the component by effectively re-clicking the original button <strong>$(&#8220;#wpquery01&#8221;).click();</strong></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>This uses the wpquery01 endpoint. Using WP_Query and WP_Comments we can construct output to list the post and comments. If the user is authorised, ($AUTH == 1 ), then a comment input field is available. This uses the insert-comment endpoint to add a comment and we reload the component by effectively re-clicking the original button [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/623"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=623"
+            }],
+            "version-history": [{
+                "count": 9,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/623/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 948,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/623/revisions/948"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=623"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=623"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=623"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 616,
+        "date": "2019-05-22T08:53:34",
+        "date_gmt": "2019-05-22T08:53:34",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=616"
+        },
+        "modified": "2019-06-05T20:20:28",
+        "modified_gmt": "2019-06-05T20:20:28",
+        "slug": "advanced-custom-fields-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/advanced-custom-fields-page/",
+        "title": {
+            "rendered": "03-4 ADVANCED CUSTOM FIELDS PAGE"
+        },
+        "content": {
+            "rendered": "<p>PLUGINS:</p>\n<p>It is beyond the scope of this course to teach ACF but a very detailed course on ACF on YouTube is available here:</p>\n<p>https://awesomeacf.com/videos/</p>\n\n\n<p>There is a grreat video on how to use ACF to create a template home page for your clients:  <a href=\"https://awesomeacf.com/videos/building-custom-homepage-advanced-custom-fields/\">https://awesomeacf.com/videos/building-custom-homepage-advanced-custom-fields/</a> </p>\n\n\n\n<p> USING WP FUNCTIONS </p>\n\n\n\n<p>We use the built in WP function get_post-meta() to access the meta data for the custom post type. </p>\n\n\n\n<pre class=\"wp-block-code\"><code>//*****  USING WP FUNCTIONS\n// $price =  get_post_meta($ID, 'price', true);\n// $qty =  get_post_meta($ID, 'quantity', true);\n// $details =  get_post_meta($ID, 'product_details', true);</code></pre>\n\n\n\n<p> USING ACF FUNCTIONS </p>\n\n\n\n<p>We use the built in functions to get the custom fields. </p>\n\n\n\n<pre class=\"wp-block-code\"><code>$price = get_field( 'price', $ID );\n$qty = get_field('quantity',$ID); \n$details = get_field('product_details', $ID); </code></pre>\n\n\n\n<p></p>\n\n\n\n<p> WP Reference: https://developer.wordpress.org/reference/functions/get_post_meta/ https://codex.wordpress.org/Function_Reference/post_meta_Function_Examples </p>\n\n\n\n<p> We can now output the data to send back to our site using HTML: &nbsp; </p>\n\n\n\n<p>//********** USE FOR HTML OUTPUT*********** */ // </p>\n\n\n\n<pre class=\"wp-block-code\"><code>echo \"PRICE: \".$price; \necho \"&lt;br>\"; \necho \"QTY: \".$qty;\necho \"&lt;br>\"; \necho \"DETAILS: \".$details; </code></pre>\n\n\n\n<p> //********** USE FOR JSON OUTPUT*********** */ //  </p>\n\n\n\n<pre class=\"wp-block-code\"><code>$json_data = array (\n    \"Details\"=>$details,\n    \"Price\"=>$price,\n\"    Qty\"=>$qty\n);\nheader('Content-Type: application/json');\necho json_encode($json_data);\n// Always die in functions echoing ajax content\ndie();</code></pre>\n\n\n\n<p></p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>PLUGINS: It is beyond the scope of this course to teach ACF but a very detailed course on ACF on YouTube is available here: https://awesomeacf.com/videos/ There is a grreat video on how to use ACF to create a template home page for your clients: https://awesomeacf.com/videos/building-custom-homepage-advanced-custom-fields/ USING WP FUNCTIONS We use the built in WP function [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/616"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=616"
+            }],
+            "version-history": [{
+                "count": 24,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/616/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 968,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/616/revisions/968"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=616"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=616"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=616"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 608,
+        "date": "2019-05-22T08:52:38",
+        "date_gmt": "2019-05-22T08:52:38",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=608"
+        },
+        "modified": "2019-08-12T13:33:00",
+        "modified_gmt": "2019-08-12T13:33:00",
+        "slug": "json-web-tokens",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/json-web-tokens/",
+        "title": {
+            "rendered": "[LOCAL DATASET] 03-3 THE JWT PAGE"
+        },
+        "content": {
+            "rendered": "<p>To make for a better user experience, we do not want users to have to login every time they want to connect to resources that need authentication.</p>\n\n\n<p>REST is a decoupled architecture by definition so the server has no prior knowledge of the client.</p>\n\n\n\n<p>In essence, we need to send some sort of token or API key with each request. We can do this in /resource/?id=xxx&amp;KEY=yyy where we make our own key. Or we could post the key.</p>\n\n\n\n<p>HTTPS encrypts but the querystring is visible in server logs. That could be a security breach.</p>\n\n\n\n<p>We are going to use JWT by sending the token in the header section of the AJAX request.</p>\n\n\n\n<p>This will be more for user experience rather than the highest level of security.</p>\n\n\n\n<h2>JSON Web Tokens (JWT)</h2>\n\n\n\n<h4>It is important to note that JWT are <em>encoding</em> not encryption.</h4>\n\n\n\n<h4>Encoding is for maintaining data usability and can be reversed by employing the same algorithm that encoded the content, i.e. no key is used. Encryption is for maintaining data confidentiality and requires the use of a key (kept secret) in order to return to plain text.</h4>\n\n\n\n<p>The purpose of JWTs are to verify the integrity of the token, its signature.</p>\n\n\n\n<p>Base64 encdoing is used and this is a free tool on the web &#8211; https://www.base64decode.org/.</p>\n\n\n\n<p>\n\nThe term Base64 refers to a specific MIME content transfer encoding. It is also used as a generic term for any similar encoding scheme that encodes&nbsp;<strong>binary data</strong>&nbsp;by treating it numerically and translating it into a base 64 representation.\n\n</p>\n\n\n\n<p>It contains three parts:</p>\n\n\n\n<ol><li>The HEADER details the hashing algorithm.</li><li>The PAYLOAD contains the data.</li><li>The SIGNATURE has a hashing of SECRET KEY, PAYLOAD and HEADER. For a given SECRET KEY, if the payload is tampered with, then the signature will be invalid.</li><li></li></ol>\n\n\n\n<ul><li>Convert HEADER to JSON.</li><li>Base64 encode it.</li><li>Convert PAYLOAD to JSON.</li><li>Base64 encode it.</li><li>Concatenate the two with a &#8220;.&#8221;</li><li>Perform a HASH on that with the SECRET KEY and HASH ALGORITHM to give raw signature.</li><li>Base64 encode this raw signature to give JWT</li></ul>\n\n\n\n<p><a href=\"https://wpjam.netlify.com/jwt-encode.html\">https://wpjam.netlify.com/jwt-encode.html</a></p>\n\n\n\n<a href=\"https://wpjs.co.uk/wpb/jwt-php-encode-decode/\" target=\"_new\" rel=\"noopener noreferrer\">https://wpjs.co.uk/wpb/jwt-php-encode-decode/</a>\n\n\n\n<p>In the example above,<strong> eyJpZCI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiQ3JhaWcgV2VzdCIsImFkbWluIjp0cnVlfQ&nbsp;</strong>is the payload. Using the base64 tool link above we can decode it to get:</p>\n\n\n\n<p>{&#8220;id&#8221;:&#8221;1234567890&#8243;,&#8221;name&#8221;:&#8221;Craig West&#8221;,&#8221;admin&#8221;:true}</p>\n\n\n\n<p>However, if it was tampered with and the id was changed in any way, then the JWT verification would say INVALID SIGNATURE. only the string above would work.</p>\n\n\n\n<p>We can see this by going to<strong> jwt.io</strong> and altering the payload.</p>\n\n\n\n<p>If we change the ID to 555, the payload becomes: <strong>eyJpZCI6IjU1NSIsIm5hbWUiOiJDcmFpZyBXZXN0IiwiYWRtaW4iOnRydWV9.</strong></p>\n\n\n\n<p>If we use this then the token is unverified.</p>\n\n\n\n<p>It is like a cheque. An algorithm takes the payee, amount, secret key etc and creates a JWT.</p>\n\n\n\n<p>The signature part corresponds to the header and payload initially supplied. Any changes, even one character will mean that the signature does not correspond to the payload and header.</p>\n\n\n\n<p>So JWT is not about encryption &#8211; https does that. It is about verifying the integrity of the payload.</p>\n\n\n\n<p>In our app, we are using tokens or API keys to prevent the user from having to log in each time as the REST API has no bond between client and server.</p>\n\n\n\n<p>We could create our own tokens but JWT is one of the industry standard methods.</p>\n\n\n\n<p>When the server receives a JWT, it can get the ID either by decoding or by checking against the 01_tblJWT table that has ID and JWT stored.</p>\n\n\n\n<p>For our app, we are checking that the JWT supplied is registered in our database and if we need the ID of the user we can get it.</p>\n\n\n\n<p>If someone supplies a JWT that is not in our database then it is like a login that has the wrong credentials.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>To make for a better user experience, we do not want users to have to login every time they want to connect to resources that need authentication. REST is a decoupled architecture by definition so the server has no prior knowledge of the client. In essence, we need to send some sort of token or [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6,
+            25
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/608"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=608"
+            }],
+            "version-history": [{
+                "count": 27,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/608/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 965,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/608/revisions/965"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=608"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=608"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=608"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 606,
+        "date": "2019-05-22T08:52:14",
+        "date_gmt": "2019-05-22T08:52:14",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=606"
+        },
+        "modified": "2019-06-02T11:50:24",
+        "modified_gmt": "2019-06-02T11:50:24",
+        "slug": "the-login-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/the-login-page/",
+        "title": {
+            "rendered": "05 THE LOGIN PAGE"
+        },
+        "content": {
+            "rendered": "\n<p></p>\n\n\n\n<p>The <strong>LOGIN PAGE</strong> is an HTML form that posts input to form/js/02_login.js.</p>\n\n\n\n<p>Whilst it has a lot of jQuery for form validation, the essential point is the post method to page-login which returns a JWT token.</p>\n\n\n\n<p>This is stored in the local storage of the browser.   The BACK END signs in the user with wp_signon. It then creates a JWT which is stored in 01_tblJWT with the userID, JWT and creation date which can enable an expiration policy to be use. It then returns a JWT. </p>\n\n\n\n<pre class=\"wp-block-code\"><code> $.post(\"https://wpjs.co.uk/wpb/login\",\n                {\n                  email: $(\"#email\").val(),\n                  pswa: $(\"#pswa\").val()\n                },\n                function(data, status){\n                  console.log(\"Data: \" + data + \"\\nStatus: \" + status);\n                  //if login fails data will be custom WP login failure message has 'ERROR'\n                  if ( data.indexOf(\"ERROR\") >= 0) {\n                    $(\"#jwt\").html(\"&lt;b>LOGIN FAILED: \" + data + \"&lt;/b>\");\n\n                  } else {\n                    $(\"#jwt\").html(\"&lt;b>AUTH: \" + data + \"&lt;/b>\");\n                    localStorage.setItem(\"JWT\", data);\n                    $(\"#formWrapper\").hide(); //hide form on html page - just UI\n                    window.location.href = \"sql01.html\"; // redirect optional\n                  }\n                  \n                });</code></pre>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>The LOGIN PAGE is an HTML form that posts input to form/js/02_login.js. Whilst it has a lot of jQuery for form validation, the essential point is the post method to page-login which returns a JWT token. This is stored in the local storage of the browser.   The BACK END signs in the user with [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/606"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=606"
+            }],
+            "version-history": [{
+                "count": 6,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/606/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 933,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/606/revisions/933"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=606"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=606"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=606"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 604,
+        "date": "2019-05-22T08:51:54",
+        "date_gmt": "2019-05-22T08:51:54",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=604"
+        },
+        "modified": "2019-05-28T11:39:21",
+        "modified_gmt": "2019-05-28T11:39:21",
+        "slug": "the-secure-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/the-secure-page/",
+        "title": {
+            "rendered": "03-1 THE SECURE PAGE"
+        },
+        "content": {
+            "rendered": "<p>This is a demo of how our endpoint sql01 checks to see if a valid JWT has been sent and then determines whether to show content or not.</p>\n<p>It uses 01-check-has-jwt.php to get the headers sent in the request and find the one for AUTHORISATION setting $AUTH = 1</p>\n<div>\n<div><span style=\"color: #993366;\">foreach($_SERVER as $key =&gt; $value) {</span></div>\n<div>         // check headers for type HTTP_</div>\n<div style=\"padding-left: 40px;\"><span style=\"color: #339966;\">if (substr($key,0,5)&lt;&gt;&#8217;HTTP_&#8217;) {</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #339966;\">continue;</span></div>\n<div style=\"padding-left: 40px;\"><span style=\"color: #339966;\">}</span></div>\n<div style=\"padding-left: 40px;\"><span style=\"color: #0000ff;\">if ($key == &#8220;HTTP_AUTHORIZATION&#8221;) {</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">$JWT = $value ; //substr($value, 7);</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">echo &#8220;&lt;b&gt;JWT TOKEN: &lt;/b&gt;&lt;span style=&#8217;color:green;&#8217;&gt;&#8221;.$JWT.&#8221;&lt;/span&gt;&#8221;;</span></div>\n<div></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">//check if valid in DB</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">$sql = &#8220;SELECT*FROM&#8221;.$prefix.&#8221;01_tblJWT WHERE JWT = &#8216;&#8221;.$JWT.&#8221;&#8216;&#8221;;</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">$result = $wpdb-&gt;get_results ( $sql );</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">if ($result) {</span></div>\n<div style=\"padding-left: 120px;\"><span style=\"color: #0000ff;\">foreach ( $result as $objRS ) {</span></div>\n<div style=\"padding-left: 160px;\"><span style=\"color: #0000ff;\">$UserID = $objRS-&gt;UserID;</span></div>\n<div style=\"padding-left: 120px;\"><span style=\"color: #0000ff;\">}</span></div>\n<div style=\"padding-left: 120px;\"><span style=\"color: #0000ff;\">$AUTH=1;</span></div>\n<div style=\"padding-left: 120px;\"><span style=\"color: #0000ff;\">echo &#8220;&lt;h1&gt;UserID  =  &#8220;.$UserID.&#8221; is AUTHORISED.&lt;/h1&gt;&#8221;;</span></div>\n<div style=\"padding-left: 80px;\"><span style=\"color: #0000ff;\">}</span></div>\n<div style=\"padding-left: 40px;\"><span style=\"color: #0000ff;\">}</span></div>\n<div><span style=\"color: #993366;\">}</span></div>\n</div>\n<div>\n<div style=\"padding-left: 80px;\"></div>\n<div></div>\n</div>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>This is a demo of how our endpoint sql01 checks to see if a valid JWT has been sent and then determines whether to show content or not. It uses 01-check-has-jwt.php to get the headers sent in the request and find the one for AUTHORISATION setting $AUTH = 1 foreach($_SERVER as $key =&gt; $value) { [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/604"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=604"
+            }],
+            "version-history": [{
+                "count": 11,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/604/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 732,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/604/revisions/732"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=604"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=604"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=604"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 601,
+        "date": "2019-05-22T08:51:25",
+        "date_gmt": "2019-05-22T08:51:25",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=601"
+        },
+        "modified": "2019-06-02T11:47:38",
+        "modified_gmt": "2019-06-02T11:47:38",
+        "slug": "the-custom-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/the-custom-page/",
+        "title": {
+            "rendered": "03 THE CUSTOM PAGE"
+        },
+        "content": {
+            "rendered": "<p>The <strong>CUSTOM PAGE</strong> can be thought of as a <strong>SINGLE PAGE APPLICATION</strong>, (SPA), as the six buttons are in effect a navigation bar that loads in different components on the page without a page refresh.</p>\n\n\n<p><strong>IF LOGGED IN: </strong>This uses <strong>sql01</strong> endpoint that checks for authorization.</p>\n\n\n\n<p><strong>JSON SERVER 01:</strong> Uses <strong>jsonserv01</strong> endpoint which we saw on the home page.</p>\n\n\n\n<p><strong>JSON SERVER 02</strong>: This is just another example of JSON data.</p>\n\n\n\n<p><strong>POST &amp; COMMENTS:</strong> This uses the<strong> wpquery01/?id=175</strong> endpoint that gets the post and also any attached comments using WP_Comment_Query. It also checks if authroised before displaying a SUBMIT COMMENT form that uses the insert-comment endpoint and then adds the comment to the page.</p>\n\n\n\n<p><strong>ACF:</strong> This returns the (advanced) custom fields for <strong>acf/?id=264.</strong></p>\n\n\n\n<p><strong>JWT</strong>: This shows the JWT token if it exists and if it does redirects to <strong>sql01</strong> endpoint.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>The CUSTOM PAGE can be thought of as a SINGLE PAGE APPLICATION, (SPA), as the six buttons are in effect a navigation bar that loads in different components on the page without a page refresh. IF LOGGED IN: This uses sql01 endpoint that checks for authorization. JSON SERVER 01: Uses jsonserv01 endpoint which we saw [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/601"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=601"
+            }],
+            "version-history": [{
+                "count": 6,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/601/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 931,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/601/revisions/931"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=601"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=601"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=601"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 599,
+        "date": "2019-05-22T08:51:10",
+        "date_gmt": "2019-05-22T08:51:10",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=599"
+        },
+        "modified": "2019-06-02T11:46:33",
+        "modified_gmt": "2019-06-02T11:46:33",
+        "slug": "the-blog-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/the-blog-page/",
+        "title": {
+            "rendered": "02 THE BLOG PAGE"
+        },
+        "content": {
+            "rendered": "<p>The blog.html page gets the post categories dynamically using <strong>page-list-categories-blog.php</strong>:</p>\n\n\n<pre class=\"wp-block-code\"><code>foreach (get_categories() as $category){\n$cat_name=$category->name;\n$catUrl=\"&lt;a href='#' id='\".$cat_name.\"' class='categories'>\".$cat_name.\"&lt;/a>\";\n$output=$catUrl.\"&lt;br>\";\necho $output;\n}</code></pre>\n\n\n\n<p>   NB this HTML output not JSON.   </p>\n\n\n\n<p>It then uses an event listener so that <strong>loadPostsInCategory.j</strong>s bypasses the default hyperlink into the WP eco system and outputs the selected data into the main content area. If we inspect the links of the posts in the particular category in dev tools we can see the <strong>showPost.js</strong>  function that outputs the post using the endpoint show-post/?id=X, displaying the content in the main card. </p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>The blog.html page gets the post categories dynamically using page-list-categories-blog.php:   NB this HTML output not JSON.   It then uses an event listener so that loadPostsInCategory.js bypasses the default hyperlink into the WP eco system and outputs the selected data into the main content area. If we inspect the links of the posts in [&hellip;]</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/599"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=599"
+            }],
+            "version-history": [{
+                "count": 6,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/599/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 930,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/599/revisions/930"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=599"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=599"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=599"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 597,
+        "date": "2019-05-22T08:51:00",
+        "date_gmt": "2019-05-22T08:51:00",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/?p=597"
+        },
+        "modified": "2019-06-02T11:44:36",
+        "modified_gmt": "2019-06-02T11:44:36",
+        "slug": "the-index-page",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/the-index-page/",
+        "title": {
+            "rendered": "01 THE INDEX PAGE"
+        },
+        "content": {
+            "rendered": "<p style=\"padding-left: 40px;\">The index.html page use standard (jQuery) AJAX GET requests to our custom endpoint.</p>\n<div>\n<div style=\"padding-left: 40px;\">&nbsp;</div>\n</div>\n<div>The ENDPOINTS are:</div>\n<div>\n<ol>\n<li>show-post/?id=522</li>\n<li>\n<div>jsonServer01</div>\n</li>\n<li>\n<div>3sql02</div>\n</li>\n<li>\n<div>acf/?id=26</div>\n</li>\n</ol>\n<p>If we look at the php file page-show-post.php for example we can see the generic code to output data from our Custom REST API.</p>\n</div>\n\n\n<pre class=\"wp-block-code\"><code>&lt;h3>\"CARD 3 - Query Custom MySQL tables with HTML output\"&lt;/h3>\n&lt;div id=\"mainContent3\" style=\"word-wrap: break-word;\">&lt;/div> // mainContent3 is output div area\n&lt;script>\nvar ajax URL=wpUrl+'sql02/'; //wpUrl is the root url defined in global.js\n$.ajax({\n  url: ajaxURL, //a string value so either literal in quotes or a sting variable\n  type: 'GET',\n  success:function(msg) {\n  console.log(\"SQL 02 - success\");\n  console.log(msg);\n  output(msg,\"#mainContent3\");\n},\nerror:function () {\n  output(\"ERROR\");\n}\n});\n\nfunction output(msg,area) //helper function\n{\n  $(area).html(msg);\n}\n&lt;/script></code></pre>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>The index.html page use standard (jQuery) AJAX GET requests to our custom endpoint. &nbsp; The ENDPOINTS are: show-post/?id=522 jsonServer01 3sql02 acf/?id=26 If we look at the php file page-show-post.php for example we can see the generic code to output data from our Custom REST API.</p>\n",
+            "protected": false
+        },
+        "author": 11,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Udemy Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/597"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/11"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=597"
+            }],
+            "version-history": [{
+                "count": 9,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/597/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 929,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/597/revisions/929"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=597"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=597"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=597"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    },
+    {
+        "id": 533,
+        "date": "2019-04-09T11:29:17",
+        "date_gmt": "2019-04-09T11:29:17",
+        "guid": {
+            "rendered": "https://wpjs.co.uk/wpb/using-global-post-to-get-current-id/"
+        },
+        "modified": "2019-05-22T08:56:11",
+        "modified_gmt": "2019-05-22T08:56:11",
+        "slug": "using-global-post-to-get-current-id",
+        "status": "publish",
+        "type": "post",
+        "link": "https://wpjs.co.uk/wpb/using-global-post-to-get-current-id/",
+        "title": {
+            "rendered": "[LOCAL DATASET] USING GLOBAL POST TO GET CURRENT ID"
+        },
+        "content": {
+            "rendered": "<p>This is a post inserted into CAT = 6 and 7 (JSON and CORS)</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>This is a post inserted into CAT = 6 and 7 (JSON and CORS)</p>\n",
+            "protected": false
+        },
+        "author": 14,
+        "featured_media": 0,
+        "comment_status": "closed",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            6
+        ],
+        "tags": [],
+        "authorName": "Craig Admin",
+        "acf": {
+            "source": null
+        },
+        "_links": {
+            "self": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/533"
+            }],
+            "collection": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+            }],
+            "about": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+            }],
+            "author": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/14"
+            }],
+            "replies": [{
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=533"
+            }],
+            "version-history": [{
+                "count": 2,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/533/revisions"
+            }],
+            "predecessor-version": [{
+                "id": 621,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/533/revisions/621"
+            }],
+            "wp:attachment": [{
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=533"
+            }],
+            "wp:term": [{
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=533"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=533"
+                }
+            ],
+            "curies": [{
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }]
+        }
+    }
+]

@@ -1,0 +1,91 @@
+[{
+    "id": 4,
+    "date": "2008-08-02T19:52:26",
+    "date_gmt": "2008-08-02T19:52:26",
+    "guid": {
+        "rendered": "http://dev.danphilibin.com/wordpress/?p=22"
+    },
+    "modified": "2019-12-24T15:44:14",
+    "modified_gmt": "2019-12-24T15:44:14",
+    "slug": "a-simple-post-with-text",
+    "status": "publish",
+    "type": "post",
+    "link": "https://wpjs.co.uk/wpb/a-simple-post-with-text/",
+    "title": {
+        "rendered": "[LOCAL DATASET] HOME PAGE POST"
+    },
+    "content": {
+        "rendered": "<h4>This is post used as a front page post/hero section.</h4>\n<p>Duis viverra nibh a felis condimentum pretium. Nullam tristique lacus non purus. Donec vel felis. Etiam et sapien. Pellentesque nec quam a justo tincidunt laoreet. Aenean id enim. Donec lorem arcu, eleifend venenatis, rhoncus mollis, semper at, dui. Praesent velit tellus, adipiscing et, blandit convallis, dictum at, dui. Integer suscipit tortor in orci. Phasellus consequat. Quisque dictum convallis pede.</p>\n\n\n<figure class=\"wp-block-gallery columns-0 is-cropped\"><ul class=\"blocks-gallery-grid\"></ul></figure>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>This is post used as a front page post/hero section. Duis viverra nibh a felis condimentum pretium. Nullam tristique lacus non purus. Donec vel felis. Etiam et sapien. Pellentesque nec quam a justo tincidunt laoreet. Aenean id enim. Donec lorem arcu, eleifend venenatis, rhoncus mollis, semper at, dui. Praesent velit tellus, adipiscing et, blandit convallis, [&hellip;]</p>\n",
+        "protected": false
+    },
+    "author": 9,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [
+        26
+    ],
+    "tags": [
+        17,
+        18,
+        21
+    ],
+    "authorName": "Jane Editor",
+    "acf": {
+        "source": ""
+    },
+    "_links": {
+        "self": [{
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/4"
+        }],
+        "collection": [{
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts"
+        }],
+        "about": [{
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/types/post"
+        }],
+        "author": [{
+            "embeddable": true,
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/users/9"
+        }],
+        "replies": [{
+            "embeddable": true,
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/comments?post=4"
+        }],
+        "version-history": [{
+            "count": 12,
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/4/revisions"
+        }],
+        "predecessor-version": [{
+            "id": 1207,
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/posts/4/revisions/1207"
+        }],
+        "wp:attachment": [{
+            "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/media?parent=4"
+        }],
+        "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/categories?post=4"
+            },
+            {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https://wpjs.co.uk/wpb/wp-json/wp/v2/tags?post=4"
+            }
+        ],
+        "curies": [{
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+        }]
+    }
+}]
