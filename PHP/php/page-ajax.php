@@ -34,16 +34,13 @@ get_header(); ?>
         font-size: 24px;
         word-break: break-all;
     }
-
     body {
         background: #fff;
     }
-
     h1 {
         font-size: 34px;
         font-weight: bold;
     }
-
     .intro {
         font-weight: bolder;
         background: #2196f3;
@@ -51,7 +48,6 @@ get_header(); ?>
         padding: 10px 30px;
         border-radius: 10px;
     }
-
     .outro {
         font-weight: bolder;
         background: white;
@@ -61,7 +57,6 @@ get_header(); ?>
         border: 3px solid orange;
         margin-top: 30px;
     }
-
     .box {
         border: 3px solid green;
         border-radius: 10px;
@@ -85,7 +80,7 @@ get_header(); ?>
                     </script>
                     <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
-
+              
                 <div class="w3-container" style="width:100%;">
                     <div class="w3-row">
                         <div class="w3-col m12" style="margin-top:20px;padding-left:30px;padding-right:30px;">
@@ -102,7 +97,28 @@ get_header(); ?>
                                 btnSearch.addEventListener('click', loadData);
                                 const btnPosts = document.getElementById('btnPosts');
                                 btnPosts.addEventListener('click', loadPosts);
-
+                                function loadData() {
+                                    const url = 'https://49plus.co.uk/test/wp-json/wordcamp/v2/districts';
+                                    console.log(url);
+                                    fetch(url)
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            // Prints result from `response.json()` in get Request
+                                            console.log("DATA", data)
+                                            console.log(data.length);
+                                            let outputData ="https://49plus.co.uk/test/wp-json/wordcamp/v2/districts";
+                                            outputData += "<table><tr><th>ID</th><th>CITY</th></tr>";
+                                            for (var i = 0; i < data.length; i++) {
+                                                outputData += "<tr><td> " + data[i].ID + "</td><td>" + data[i].Name +
+                                                    "<td></tr>";
+                                            }
+                                            outputData += "</table>";
+                                            const main = document.getElementById('mainContent');
+                                            main.innerHTML = outputData;
+                                            main.className = "box";
+                                        })
+                                        .catch(error => console.error(error))
+                                }
                                 function loadPosts() {
                                     const url = 'https://49plus.co.uk/test/wp-json/wp/v2/posts';
                                     console.log(url);
@@ -116,9 +132,8 @@ get_header(); ?>
                                             let outputData = "https://49plus.co.uk/test/wp-json/wp/v2/posts"
                                             outputData += "<table><tr><th>ID</th><th>TITLE</th></tr>";
                                             for (let i = 0; i < data.length; i++) {
-                                                outputData += "<tr><td>" + data[i].id + "</td><td>" + data[i].title
-                                                    .rendered +
-                                                    "</td></tr>";
+                                                outputData += "<tr><td>" + data[i].id + "</td><td>" + data[i].title.rendered
+                                                     + "</td></tr>";
                                             }
                                             outputData += "</table>";
                                             const main = document.getElementById('mainContent');
@@ -126,50 +141,24 @@ get_header(); ?>
                                             main.className = "box";
                                         })
                                         .catch(error => console.error(error))
-
-                                    function loadData() {
-                                        const url = 'https://49plus.co.uk/test/wp-json/wordcamp/v2/districts';
-                                        console.log(url);
-                                        fetch(url)
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                // Prints result from `response.json()` in get Request
-                                                console.log("DATA", data)
-                                                console.log(data.length);
-                                                let outputData =
-                                                    "https://49plus.co.uk/test/wp-json/wordcamp/v2/districts";
-                                                outputData += "<table><tr><th>ID</th><th>CITY</th></tr>";
-                                                for (var i = 0; i < data.length; i++) {
-                                                    outputData += "<tr><td> " + data[i].ID + "</td><td>" + data[i]
-                                                        .Name +
-                                                        "<td></tr>";
-                                                }
-                                                outputData += "</table>";
-                                                const main = document.getElementById('mainContent');
-                                                main.innerHTML = outputData;
-                                                main.className = "box";
-                                            })
-                                            .catch(error => console.error(error))
-                                    }
                                 }
                             </script>
                             <!-- ================ MAIN CODE ======================= -->
                             <div>
-                                <br>
-
-
+                            <br>
+                                
+                            
                                 <?php
                                     global $wpdb;
                                     $db =  $wpdb->dbname;            
                                 ?>
-                                <p><?php echo "<b>SERVER: </b>".$SITE." <b>DB: </b>".$db;?></p>
+                                <p><?php echo "<b>SERVER: </b>".$SITE." <b>DB: </b>".$db;?></p> 
                                 <p><b>Database:</b> <?php echo $db ?></p>
                                 <p><?php echo "<b>CHILD get_theme_file_uri():</b> <br>".get_theme_file_uri(); ?></p>
-                                <p><?php echo "<b>CHILD IMAGES FOLDER get_theme_file_uri():</b> <br>".get_theme_file_uri()."/images/"; ?>
-                                </p>
+                                <p><?php echo "<b>CHILD IMAGES FOLDER get_theme_file_uri():</b> <br>".get_theme_file_uri()."/images/"; ?></p>
                                 <p><?php echo "<b>PARENT get_template_directory_uri():</b> <br>". get_template_directory_uri(); ?>
                                 </p>
-
+                              
                             </div>
                             <br><br><br>
                             <!-- ************************* END TEMPLATE AREA ********************************-->
