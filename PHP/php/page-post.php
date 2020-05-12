@@ -1,73 +1,10 @@
 <?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package Bootstrap to WordPress
- */
 
 get_header(); ?>
 
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    /* :root {
-    margin-left: calc(100vw - 100%);
-    overflow-y: scroll;
-} */
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Raleway", sans-serif;
-        font-size: 24px;
-        word-break: none;
 
-    }
-
-    body {
-        background: #fff;
-    }
-
-    h1 {
-        font-size: 34px;
-        font-weight: bold;
-    }
-
-
-    .intro {
-        font-weight: bolder;
-        background: #2196f3;
-        color: white;
-        padding: 10px 30px;
-        border-radius: 10px;
-    }
-
-    .outro {
-        font-weight: bolder;
-        background: white;
-        color: black;
-        padding: 10px 30px;
-        border-radius: 10px;
-        border: 3px solid orange;
-        margin-top: 30px;
-    }
-
-    .box {
-        border: 3px solid green;
-        border-radius: 10px;
-        padding: 10px;
-        font-weight: bold;
-    }
-</style>
 <!-- Page Container -->
 <script>
     const rnd = Math.floor(Math.random() * 100000000000);

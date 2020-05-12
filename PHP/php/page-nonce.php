@@ -1,25 +1,9 @@
 <?php
-/**
- * page-test.php
- * 
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
+
 get_header(); ?>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<style>
-    :root {
-        /* margin-left: calc(100vw - 100%);
-        overflow-y: scroll; */
-    }
-
-    body {
-        font-size: 22px;
-        background: #fff;
-    }
-</style>
-<br><br>
 <div id="primary" >
     <div id="content" class="site-content" role="main" style="padding-left:10px; padding-right:10px;">
         <h1>This page is a WordPress NONCE test page.</h1>
