@@ -2,8 +2,6 @@
 
 get_header(); ?>
 
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-- Page Container -->
 <script>

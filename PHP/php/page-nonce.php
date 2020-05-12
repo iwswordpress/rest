@@ -1,8 +1,8 @@
 <?php
 
 get_header(); ?>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 <div id="primary" >
     <div id="content" class="site-content" role="main" style="padding-left:10px; padding-right:10px;">

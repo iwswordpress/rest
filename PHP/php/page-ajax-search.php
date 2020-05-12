@@ -3,16 +3,6 @@
 
 get_header(); ?>
 
-
-<!-- ENTER YOUR REST API ORIGIN URL HERE -->
-
-<!-- ENTER YOUR REST API ORIGIN URL HERE -->
-
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<!-- Page Container -->
-
 <?php include 'server.php'; ?>
 <main>
     <br><br>
@@ -40,7 +30,7 @@ get_header(); ?>
                     <div class="w3-row">
                         <div class="w3-col m12" style="margin-top:20px;padding-left:30px;padding-right:30px;">
                             <h2>Returns posts from search...</h2>
-                            <p><?php echo $SITE; ?>wp-json/wp/v2/posts?search=</p>
+                            <p><?php echo $SITE; ?>wp-json/wp/v2/posts?s=</p>
                             <div style="margin-bottom:30px;">
                                 <input id="x" type="text" name="searchTerm" placeholder="search..." value="lorem">
 
@@ -59,7 +49,7 @@ get_header(); ?>
                                     console.log("== SEARCH ===");
                                     const x = document.getElementById('x').value;
                                     console.log('search for: ', x);
-                                    const url = '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts?search=' + x;
+                                    const url = '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts?s=' + x;
 
                                     console.log(url);
                                     fetch(url)

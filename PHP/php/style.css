@@ -13,7 +13,7 @@ Template:       generatepress
 * {
    font-family: "Raleway", sans-serif;
    font-size: 24px;
-   word-break: break-all;
+
 }
 
 body {
@@ -48,4 +48,8 @@ h1 {
    border-radius: 10px;
    padding: 10px;
    font-weight: bold;
+}
+
+p {
+   /* word-break: break-all; */
 }

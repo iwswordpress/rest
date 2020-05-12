@@ -6,8 +6,7 @@ get_header(); ?>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
    
 </style>
@@ -32,10 +31,10 @@ get_header(); ?>
                     <div class="w3-row">
                         <div class="w3-col m12" style="margin-top:20px;padding-left:30px;padding-right:30px;">
                             <div style="margin-bottom:30px;">
-                                <input id="btnPosts" name="btnSearch" class="w3-btn w3-border w3-large w3-blue"
+                            <input id="btnPosts" name="btnPosts" class="w3-btn w3-border w3-large w3-blue"
                                     value="LOAD POSTS">
                                 <input id="btnSearch" name="btnSearch" class="w3-btn w3-border w3-large w3-blue"
-                                    value="LOAD DATA">
+                                    value="LOAD MySQL">
                             </div>
                             <div id="mainContent"></div>
                             <!-- ================ MAIN CODE ======================= -->
