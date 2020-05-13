@@ -69,7 +69,7 @@ add_action('rest_api_init', function () {
             $jwt = $request->get_param("jwt");
             $nonce = strval($request->get_param("nonce"));
             // 'NoncePageTest' was name or key we gave the nonce on the form page
-            $check = wp_verify_nonce( $nonce, 'NoncePageTest' );
+            $check = wp_verify_nonce( $nonce, 'wp_rest' );
             switch ( $check ) {
                 case 0:
                     $message = 'Nonce FAILS. ';

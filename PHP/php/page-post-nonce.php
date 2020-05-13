@@ -80,7 +80,9 @@ get_header(); ?>
                         const JWT = localStorage.getItem('JWT');
                        
                         // one can use localize_script to create global JS variable to use in PHP
-                        const nonceValue = '<?php  echo wp_create_nonce('NoncePageTest'); ?>';
+                        // must be wp_rest to work and have headers in fetch
+                        // https://stackoverflow.com/questions/41878315/wp-ajax-nonce-works-when-logged-out-but-not-when-logged-in
+                        const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>';
                         console.log("form nonceValue: " + nonceValue);
 
                         const formData = new FormData();
@@ -93,7 +95,9 @@ get_header(); ?>
                         console.log("url: " + apiUrl);
                         fetch(apiUrl, {
                                 method: 'POST',
-                                body: formData
+                                body: formData,
+                                //credentials: 'same-origin', // include, *same-origin, omit
+                                headers: { 'X-WP-Nonce': nonceValue}
                             })
                             .then(function (response) {
                                 return response.text();
