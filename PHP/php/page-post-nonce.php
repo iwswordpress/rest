@@ -102,8 +102,8 @@ get_header(); ?>
                         fetch(apiUrl, {
                                 method: 'POST',
                                 body: formData
-                                // if one does not use _wpnonce as POST parameter then one must send nonce in headers as below
-                                //headers: { 'X-WP-Nonce': nonceValue}
+                                // if one does not use _wpnonce as POST parameter then one can send nonce in headers as below
+                                // headers: { 'X-WP-Nonce': nonceValue}
                             })
                             .then(function (response) {
                                 return response.text();
