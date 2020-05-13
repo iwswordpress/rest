@@ -111,7 +111,7 @@ add_action('rest_api_init', function () {
                     "method"         => "POST<br>", 
                     "message"        => $message."<br>", 
                     "jwt received"   => $jwt."<br>",
-                    "nonce received" => $nonce."<br>",
+                    "form nonce"     => $nonce."<br>",
                     "parameters"     => $parameters."<br>",
                     "header_nonce"   => $header_nonce."<br>"
                 );
