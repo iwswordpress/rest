@@ -39,7 +39,7 @@ add_action('rest_api_init', function () {
                             }
                         ),
                         // this is the nonce from X-WP-NONCE function
-                        'nonce'    => array(
+                        '_wpnonce'    => array(
                             'type' => 'string',
                             'required' => true,
                             'validate_callback' => function($param){
@@ -61,13 +61,13 @@ add_action('rest_api_init', function () {
                 "title"   => $request->get_param("title"),
                 "content" => $request->get_param("content"),
                 "jwt"     => $request->get_param("jwt"),
-                "nonce"   => $request->get_param("nonce")
+                "_wpnonce"   => $request->get_param("_wpnonce")
                 );  
             // Do standard validations
             $title = sanitize_text_field($request->get_param("title"));
             $content = sanitize_text_field($request->get_param("content"));
             $jwt = $request->get_param("jwt");
-            $nonce = strval($request->get_param("nonce"));
+            $nonce = strval($request->get_param("_wpnonce"));
             // 'NoncePageTest' was name or key we gave the nonce on the form page
             $check = wp_verify_nonce( $nonce, 'wp_rest' );
             switch ( $check ) {

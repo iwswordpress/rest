@@ -11,6 +11,7 @@ get_header(); ?>
         <p>We create a nonce and WP uses a label that we give it, in this case 'NoncePageTest'.</p>
         <p>We can verify a supplied nonce value against the value WP created. It returns true or false.</p>
         <p>As the WP nonce was created on the page in WP, we can be sure the data received came from that page.</p>
+        <p>Great article on nonces: <a href="https://www.bynicolas.com/code/wordpress-nonce/" target="_blank">https://www.bynicolas.com/code/wordpress-nonce/</a></p>
         <?php 
 			global $wpdb;
 			echo "DB: ".$wpdb->dbname;
@@ -30,6 +31,8 @@ get_header(); ?>
             <dd><?php echo ((bool)wp_verify_nonce($InvalidNonce,'NoncePageTest')?'NONCE is VALID':'NONCE is INVALID');?>
             </dd>
         </dl>
+        <p>https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/</p>
+        <p>https://www.bynicolas.com/code/wordpress-nonce/</p>  
         <p>https://developer.wordpress.org/reference/functions/wp_nonce_field/</p>
         <p>https://codex.wordpress.org/WordPress_Nonces</p>
         <p>https://pantheon.io/blog/nonce-upon-time-wordpress</p>

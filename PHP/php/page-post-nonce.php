@@ -26,6 +26,7 @@ get_header(); ?>
                 <p>It also sends a hidden NONCE token to verify that a genuine page sent this data as well as a JWT.</p>
                 <p>NONCE does not work if logged in - use logged-in-user details to verify.</p>
                 <p>Uses  <?php echo $SITE; ?>wp-json/owt/v1/rest03</p>
+                <p>NONCES a maximum of two ticks = 24 hours - <a href="https://www.bynicolas.com/code/wordpress-nonce/" target="_blank">great article</a></p>
                 <form autocomplete="off" id="myForm" method="post" action="posted.php">
                     <table class="w3-table w3-bordered" style="background:white;" id="mainTable">
                         <!-- ======================== EMAIL ========================================================-->
@@ -80,24 +81,29 @@ get_header(); ?>
                         const JWT = localStorage.getItem('JWT');
                        
                         // one can use localize_script to create global JS variable to use in PHP
-                        // must be wp_rest to work and have headers in fetch
+                        //
+                        // Must be wp_rest to work 
+                        // Either _wpnonce as POST parameter or use headers: { 'X-WP-Nonce': nonceValue} in AJAX
                         // https://stackoverflow.com/questions/41878315/wp-ajax-nonce-works-when-logged-out-but-not-when-logged-in
-                        const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>';
+                        // https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
+                        
+                        const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>'; // ! must be wp_rest
                         console.log("form nonceValue: " + nonceValue);
 
                         const formData = new FormData();
                         formData.append('title', title);
                         formData.append('content', data);
                         formData.append('jwt', JWT);
-                        formData.append('nonce', nonceValue);
+                        formData.append('_wpnonce', nonceValue); 
+                        // must use _wpnonce as parameter in POST otherwise headers below must be used
                         
                         let apiUrl = '<?php echo $SITE; ?>' + 'wp-json/owt/v1/rest03';
                         console.log("url: " + apiUrl);
                         fetch(apiUrl, {
                                 method: 'POST',
-                                body: formData,
-                                //credentials: 'same-origin', // include, *same-origin, omit
-                                headers: { 'X-WP-Nonce': nonceValue}
+                                body: formData
+                                // if one does not use _wpnonce as POST parameter then one must send nonce in headers as below
+                                //headers: { 'X-WP-Nonce': nonceValue}
                             })
                             .then(function (response) {
                                 return response.text();
@@ -105,8 +111,7 @@ get_header(); ?>
                             .then(function (data) {
                                 console.log(data);
                                 // display result on page for demo purposes
-                                output.innerHTML = data;
-                              
+                                output.innerHTML = data;                
                             });
                     }
                 </script>
