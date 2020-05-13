@@ -60,7 +60,6 @@ add_action('rest_api_init', function () {
         //     if ($name == 'X-Wp-Nonce') {
         //         $headers = "$name: $value"; 
         //     }
-        
         // } 
 
         $headersArray = getallheaders();
@@ -68,10 +67,10 @@ add_action('rest_api_init', function () {
         
         if ($request_type == "POST") { 
             $parameters = array(
-                "title"   => $request->get_param("title"),
-                "content" => $request->get_param("content"),
-                "jwt"     => $request->get_param("jwt"),
-                "_wpnonce"   => $request->get_param("_wpnonce")
+                "title"    => $request->get_param("title"),
+                "content"  => $request->get_param("content"),
+                "jwt"      => $request->get_param("jwt"),
+                "_wpnonce" => $request->get_param("_wpnonce")
                 );  
             // Do standard validations
             $title = sanitize_text_field($request->get_param("title"));
