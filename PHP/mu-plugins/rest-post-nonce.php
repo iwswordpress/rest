@@ -56,12 +56,15 @@ add_action('rest_api_init', function () {
   function rest03_route(WP_REST_Request $request) { // works without WP_REST_Request
         $request_type = $_SERVER['REQUEST_METHOD'];
 
-        foreach (getallheaders() as $name => $value) { 
-            if ($name == 'X-Wp-Nonce') {
-                $headers = "$name: $value <br>"; 
-            }
+        // foreach (getallheaders() as $name => $value) { 
+        //     if ($name == 'X-Wp-Nonce') {
+        //         $headers = "$name: $value"; 
+        //     }
         
-        } 
+        // } 
+
+        $headersArray = getallheaders();
+        $header_nonce = $headersArray['X-Wp-Nonce'];
         
         if ($request_type == "POST") { 
             $parameters = array(
@@ -74,7 +77,7 @@ add_action('rest_api_init', function () {
             $title = sanitize_text_field($request->get_param("title"));
             $content = sanitize_text_field($request->get_param("content"));
             $jwt = $request->get_param("jwt");
-            $nonce = strval($request->get_param("_wpnonce"));
+            $nonce = strval($request->get_param("_wpnonce")); // or value from header X-Wp-nonce
             // 'NoncePageTest' was name or key we gave the nonce on the form page
             $check = wp_verify_nonce( $nonce, 'wp_rest' );
             switch ( $check ) {
@@ -97,7 +100,7 @@ add_action('rest_api_init', function () {
                     'post_content'  => $content,
                     'post_status'   => 'publish',
                     'post_author'   => 1,
-                    'post_category' => array(3 )
+                    'post_category' => array(4)
                 );
                 
                 // Insert the post into the database
@@ -110,7 +113,7 @@ add_action('rest_api_init', function () {
                     "jwt received"   => $jwt."<br>",
                     "nonce received" => $nonce."<br>",
                     "parameters"     => $parameters."<br>",
-                    "headers"        => $headers."<br>"
+                    "header_nonce"   => $header_nonce."<br>"
                 );
             }
             else {
