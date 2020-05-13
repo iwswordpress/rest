@@ -87,6 +87,7 @@ get_header(); ?>
                         // https://stackoverflow.com/questions/41878315/wp-ajax-nonce-works-when-logged-out-but-not-when-logged-in
                         // https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
                         
+                        // We could use wp_localize_script but this is acceptable
                         const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>'; // ! must be wp_rest
                         console.log("form nonceValue: " + nonceValue);
 
