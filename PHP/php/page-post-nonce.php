@@ -65,7 +65,6 @@ get_header(); ?>
                 </table>
 
                 <script>
-                    
                     const btn = document.getElementById('btnSubmit');
                     btn.addEventListener('click', formHandler);
                     //jwt.innerHTML = "Data being sent: " + emailValue + " - " + passwordValue;
