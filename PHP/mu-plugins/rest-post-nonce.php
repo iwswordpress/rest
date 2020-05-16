@@ -56,12 +56,10 @@ add_action('rest_api_init', function () {
   function rest03_route(WP_REST_Request $request) { // works without WP_REST_Request
         $request_type = $_SERVER['REQUEST_METHOD'];
 
-        // foreach (getallheaders() as $name => $value) { 
-        //     if ($name == 'X-Wp-Nonce') {
-        //         $headers = "$name: $value"; 
-        //     }
-        // } 
-
+        foreach (getallheaders() as $name => $value) {  
+                $all_headers .= "$name: $value<br>"; 
+        } 
+  
         $headersArray = getallheaders();
         $header_nonce = $headersArray['X-Wp-Nonce'];
         
@@ -112,7 +110,8 @@ add_action('rest_api_init', function () {
                     "jwt received"   => $jwt."<br>",
                     "form nonce"     => $nonce."<br>",
                     "parameters"     => $parameters."<br>",
-                    "header_nonce"   => $header_nonce."<br>"
+                    "header_nonce"   => $header_nonce."<br><br><hr>",
+                    "all_headers"    => "<br>".$all_headers."<br>"
                 );
             }
             else {
