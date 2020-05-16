@@ -10,8 +10,8 @@ function theme_enqueue_styles() {
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style')
     );
-    wp_enqueue_style( 'child-style-font', 'https://fonts.googleapis.com/css?family=Raleway', array('parent-style'));
-    wp_enqueue_style( 'child-style-w3', 'https://www.w3schools.com/w3css/4/w3.css', array('parent-style'));
+    // wp_enqueue_style( 'child-style-font', 'https://fonts.googleapis.com/css?family=Raleway', array('parent-style'));
+    // wp_enqueue_style( 'child-style-w3', 'https://www.w3schools.com/w3css/4/w3.css', array('parent-style'));
 }
 
 
