@@ -49,7 +49,18 @@ add_action('rest_api_init', function () {
                                     return false;
                                 }
                             }
-                        )
+                        ),
+                        'session_id'    => array(
+                            'type' => 'string',
+                            'required' => true,
+                            'validate_callback' => function($param){
+                                if (strlen($param) > 4) {
+                                    return true;
+                                } else {
+                                    return false;
+                                }
+                            }
+                        ),
                   )
         ));
   });
@@ -65,15 +76,17 @@ add_action('rest_api_init', function () {
         
         if ($request_type == "POST") { 
             $parameters = array(
-                "title"    => $request->get_param("title"),
-                "content"  => $request->get_param("content"),
-                "jwt"      => $request->get_param("jwt"),
-                "_wpnonce" => $request->get_param("_wpnonce")
+                "title"      => $request->get_param("title"),
+                "content"    => $request->get_param("content"),
+                "jwt"        => $request->get_param("jwt"),
+                "_wpnonce"   => $request->get_param("_wpnonce"),
+                "session_id" => $request->get_param("session_id"),
                 );  
             // Do standard validations
             $title = sanitize_text_field($request->get_param("title"));
             $content = sanitize_text_field($request->get_param("content"));
             $jwt = $request->get_param("jwt");
+            $session_id = sanitize_text_field($request->get_param("session_id"));
             $nonce = strval($request->get_param("_wpnonce")); // or value from header X-Wp-nonce
             // 'NoncePageTest' was name or key we gave the nonce on the form page
             $check = wp_verify_nonce( $nonce, 'wp_rest' );
@@ -108,6 +121,7 @@ add_action('rest_api_init', function () {
                     "method"         => "POST<br>", 
                     "message"        => $message."<br>", 
                     "jwt received"   => $jwt."<br>",
+                    "session_id"     => $session_id."<br>",
                     "form nonce"     => $nonce."<br>",
                     "parameters"     => $parameters."<br>",
                     "header_nonce"   => $header_nonce."<br><br><hr>",

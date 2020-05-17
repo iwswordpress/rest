@@ -59,7 +59,7 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>
-                            <div id="output"></div>
+                            <div id="output" style="word-break: break-all;"></div>
                         </td>
                     </tr>
                 </table>
@@ -78,6 +78,7 @@ get_header(); ?>
                         console.log("Content", data);
                         const output = document.getElementById('output');
                         const JWT = localStorage.getItem('JWT');
+                        const session_id = '<?php echo wp_get_session_token(); ?>';
                        
                         // one can use localize_script to create global JS variable to use in PHP
                         //
@@ -95,6 +96,7 @@ get_header(); ?>
                         formData.append('content', data);
                         formData.append('jwt', JWT);
                         formData.append('_wpnonce', nonceValue); 
+                        formData.append('session_id', session_id); 
                         // must use _wpnonce as parameter in POST otherwise headers below must be used
                         
                         let apiUrl = '<?php echo $SITE; ?>' + 'wp-json/owt/v1/rest03';
