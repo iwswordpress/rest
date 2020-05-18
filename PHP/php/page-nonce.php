@@ -1,6 +1,8 @@
 <?php
 
 get_header(); ?>
+<!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 <div id="primary" >
     <div id="content" class="site-content" role="main" style="padding-left:10px; padding-right:10px;">
@@ -10,7 +12,6 @@ get_header(); ?>
         <p>We can verify a supplied nonce value against the value WP created. It returns true or false.</p>
         <p>As the WP nonce was created on the page in WP, we can be sure the data received came from that page.</p>
         <p>Great article on nonces: <a href="https://www.bynicolas.com/code/wordpress-nonce/" target="_blank">https://www.bynicolas.com/code/wordpress-nonce/</a></p>
-       
         <?php 
 			global $wpdb;
 			echo "DB: ".$wpdb->dbname;

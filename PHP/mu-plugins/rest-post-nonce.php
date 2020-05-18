@@ -52,14 +52,7 @@ add_action('rest_api_init', function () {
                         ),
                         'session_id'    => array(
                             'type' => 'string',
-                            'required' => true,
-                            'validate_callback' => function($param){
-                                if (strlen($param) > 4) {
-                                    return true;
-                                } else {
-                                    return false;
-                                }
-                            }
+                            'required' => false
                         ),
                   )
         ));
@@ -87,6 +80,7 @@ add_action('rest_api_init', function () {
             $content = sanitize_text_field($request->get_param("content"));
             $jwt = $request->get_param("jwt");
             $session_id = sanitize_text_field($request->get_param("session_id"));
+            if (!$session_id) $session_id = "logged out";
             $nonce = strval($request->get_param("_wpnonce")); // or value from header X-Wp-nonce
             // 'NoncePageTest' was name or key we gave the nonce on the form page
             $check = wp_verify_nonce( $nonce, 'wp_rest' );

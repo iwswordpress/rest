@@ -2,7 +2,8 @@
 // POST PARAMETER
 add_action('rest_api_init', function () {
     register_rest_route( 'owt/v1', 'rest02',array(
-                  'methods'  => WP_REST_Server::CREATABLE, // instead of 'POST'
+               //  'methods'  => WP_REST_Server::READABLE,
+                  'methods'  => WP_REST_Server::CREATABLE,
                   'callback' => 'rest02_route',
                   'args'     => array (
                         'title'  => array( 
@@ -14,7 +15,7 @@ add_action('rest_api_init', function () {
                                 } else {
                                     return false;
                                 }
-                            } // we can add permission_callback but we can check user_can in function below
+                            }
                         ),
                         'content'  => array(
                             'type'     => 'string',
