@@ -42,7 +42,7 @@ get_header(); ?>
                                     console.log("== SEARCH ===");
                                     const x = document.getElementById('x').value;
                                     console.log('search for: ', x);
-                                    const url = '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts?s=' + x;
+                                    const url = '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts?search=' + x;
 
                                     console.log(url);
                                     fetch(url)
