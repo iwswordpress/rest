@@ -1,6 +1,5 @@
 <?php
 
-
 get_header(); ?>
 
 <?php include 'server.php'; ?>
@@ -12,11 +11,7 @@ get_header(); ?>
             <div class="w3-col m12">
                 <!-- ************************* START TEMPLATE AREA ********************************-->
                 <!-- CONTENT CARD-->
-                <div>
-                    <p><?php //echo "<b>get_theme_file_uri():</b> ".get_theme_file_uri(); ?></p>
-                    <p><?php //echo "<b> get_template_directory_uri():</b> ". get_template_directory_uri(); ?></p>
-
-                </div>
+              
                 <header class="w3-container w3-blue" style="margin-top:20px;">
                     <script>
                         document.write(' <div style="font-size:40px;">SEARCH FORM</div>');
@@ -24,13 +19,11 @@ get_header(); ?>
                     <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
 
-
-
                 <div class="w3-container" style="width:100%;">
                     <div class="w3-row">
                         <div class="w3-col m12" style="margin-top:20px;padding-left:30px;padding-right:30px;">
                             <h2>Returns posts from search...</h2>
-                            <p><?php echo $SITE; ?>wp-json/wp/v2/posts?s=</p>
+                            <p><?php echo $SITE; ?>wp-json/wp/v2/posts?search=</p>
                             <div style="margin-bottom:30px;">
                                 <input id="x" type="text" name="searchTerm" placeholder="search..." value="lorem">
 
