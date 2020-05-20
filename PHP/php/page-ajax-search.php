@@ -25,7 +25,7 @@ get_header(); ?>
                             <h2>Returns posts from search...</h2>
                             <p><?php echo $SITE; ?>wp-json/wp/v2/posts?search=</p>
                             <div style="margin-bottom:30px;">
-                                <input id="x" type="text" name="searchTerm" placeholder="search..." value="lorem">
+                                <input id="x" type="text" name="searchTerm" placeholder="search..." value="JSON">
 
                                 <input id="btnSearch" name="btnSearch" class="w3-btn w3-border w3-large w3-blue"
                                     value="SEARCH">
