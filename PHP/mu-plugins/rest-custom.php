@@ -15,7 +15,7 @@ function add_author_name_to_posts() {
   }
 add_action('rest_api_init', 'add_author_name_to_posts');
 
-// ================ ADD CUSTOM ENDPOINT  wordcamp/v1/districts TO WP REST API ========================
+// ================ ADD CUSTOM ENDPOINT  wordcamp/v2/districts TO WP REST API ========================
 // NAMESPACE is: wordcamp/v1
 // ROUTE is: districts
 // Carry out MySQL query
