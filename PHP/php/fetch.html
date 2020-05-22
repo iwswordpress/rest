@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +7,13 @@
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
-
 <body>
-
    <style>
       body {
          font-family: 'Raleway';
          font-size: 24px;
       }
    </style>
-
    <main>
       <br><br>
       <div class="w3-container w3-content" style="max-width:1000px;border:2px solid #2196f3;border-radius:10px;">
@@ -29,7 +25,6 @@
                <header class="w3-container w3-blue" style="margin-top:20px;">
                   <h1>FETCH JSON STREAM</h1>
                </header>
-
                <div class="w3-container" style="width:100%;">
                   <div class="w3-row">
                      <div class="w3-col m12" style="margin-top:20px;padding-left:30px;padding-right:30px;">
@@ -46,7 +41,6 @@
                            // BUTTON
                            const btnPosts = document.getElementById('btnPosts');
                            btnPosts.addEventListener('click', loadPosts);
-
                            function loadPosts() {
                               const url = 'https://49plus.co.uk/udemy/wp-json/wp/v2/posts';
                               console.log(url);
@@ -65,7 +59,8 @@
                                     console.log("POSTS", dataArray)
                                     console.log(dataArray.length);
                                     console.log("Number of posts is " + dataArray.length);
-                                    let outputData = 'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
+                                    let outputData =
+                                    'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
                                     outputData +=
                                        '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
                                     for (let i = 0; i < dataArray.length; i++) {
@@ -81,7 +76,6 @@
                            }
                         </script>
                         <!-- ================ MAIN CODE ======================= -->
-
                         <br><br><br>
                         <!-- ************************* END TEMPLATE AREA ********************************-->
                      </div><!-- endcard -->
