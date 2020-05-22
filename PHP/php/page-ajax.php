@@ -7,9 +7,6 @@ get_header(); ?>
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 
-<style>
-   
-</style>
 <!-- Page Container -->
 <?php include 'server.php'; ?>
 <main>
@@ -38,6 +35,8 @@ get_header(); ?>
                             </div>
                             <div id="mainContent"></div>
                             <!-- ================ MAIN CODE ======================= -->
+                            <!-- Very good short video on FETCH JSON https://www.youtube.com/watch?v=cuEtnrL9-H0 -->
+                            <!-- Very good short video on PROMISES https://www.youtube.com/watch?v=DHvZLI7Db8E -->
                             <script>
                                 const btnSearch = document.getElementById('btnSearch');
                                 btnSearch.addEventListener('click', loadData);
