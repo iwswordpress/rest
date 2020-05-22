@@ -59,17 +59,17 @@
                                     // 404 is not an error
                                     // response.ok == true to indicate in 200 range
                                  })
-                                 .then(data => {
+                                 .then(dataArray => {
                                     // Prints result from `response.json()` in get Request
                                     console.log("RESPONSE.JSON()")
-                                    console.log("POSTS", data)
-                                    console.log(data.length);
-                                    console.log("Number of posts is " + data.length);
-                                    let outputData = 'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts';
+                                    console.log("POSTS", dataArray)
+                                    console.log(dataArray.length);
+                                    console.log("Number of posts is " + dataArray.length);
+                                    let outputData = 'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
                                     outputData +=
                                        '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
-                                    for (let i = 0; i < data.length; i++) {
-                                       outputData += "<tr><td>" + data[i].id + "</td><td>" + data[i].title.rendered +
+                                    for (let i = 0; i < dataArray.length; i++) {
+                                       outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered +
                                           "</td></tr>";
                                     }
                                     outputData += "</table>";
