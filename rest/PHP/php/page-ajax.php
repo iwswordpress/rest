@@ -46,10 +46,7 @@ get_header(); ?>
                                     const url = '<?php echo $SITE; ?>' + 'wp-json/wordcamp/v2/districts';
                                     console.log(url);
                                     fetch(url)
-                                        .then(response => {
-                                                console.log(response);
-                                                return response.json();
-                                            })
+                                        .then(response => response.json())
                                         .then(data => {
                                             // Prints result from `response.json()` in get Request
                                             console.log("DATA", data)
@@ -71,10 +68,7 @@ get_header(); ?>
                                     const url =  '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts';
                                     console.log(url);
                                     fetch(url)
-                                        .then(response => {
-                                                console.log(response);
-                                                return response.json();
-                                            })
+                                        .then(response => response.json())
                                         .then(data => {
                                             // Prints result from `response.json()` in get Request
                                             console.log("POSTS", data)
