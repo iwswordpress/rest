@@ -168,7 +168,7 @@ get_header(); ?>
                                 console.log("JWT: " + token);
                                 if (validID > 0) {
                                     user_id.innerHTML = message + " ID: " + id;
-                                    jwt.innerHTML = "JWT: " + id;  
+                                    jwt.innerHTML = "JWT: " + token;  
                                 } else {
                                     user_id.innerHTML = "INVALID LOGIN";
                                 }
