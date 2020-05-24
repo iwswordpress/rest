@@ -124,6 +124,7 @@ get_header(); ?>
                     function formHandler() {
                         // Get form data and create variables to div elements 
                         // to output data.
+                        const myForm = document.getElementById('myForm');
                         const emailValue = document.getElementById('email').value;
                         const passwordValue = document.getElementById('pswa').value;
                         console.log(emailValue);
@@ -156,26 +157,31 @@ get_header(); ?>
                             })
                             .then(function (data) {
                                 console.log(data);
-                                // data is JSON-like but is just a string of characters
-                                // JSON.parse converts the string to a JSON object.
-                               
-                                const id = data.ID;
+
+                                const message = data.message;
+                                const id = data.ID; 
                                 const token = data.jwt;
+                                const validID = data.valid.ID || 0; // if successful has id, if not set to zero
+                                console.log("VALID ID = " + validID)                                
+                                console.log("RESULT: " + message);
                                 console.log("ID: " + id);
                                 console.log("JWT: " + token);
-                                // output data to the div tags in HTML section
-                                if (id !== null) {
-                                    user_id.innerHTML = "ID: " + id;
-                                    jwt.innerHTML = "JWT: " + id;
-                                    //alert(token);
-                                } 
-                              
+                                if (validID > 0) {
+                                    user_id.innerHTML = message + " ID: " + id;
+                                    jwt.innerHTML = "JWT: " + id;  
+                                } else {
+                                    user_id.innerHTML = "INVALID LOGIN";
+                                }
+                                
                             })
-                            // if we don't get a valid authentication for any reason
+                            // network failure rather than a 400
                             // handle this gracefully.
                             .catch(function(error) {
                                 console.log(error);
                                 user_id.innerHTML = "NETWORK ERROR";
+                            })
+                            .finally(function() {
+                                // this occurs at end regardless
                             })
                             ;
                             
