@@ -152,28 +152,30 @@ get_header(); ?>
                                 //body: testdata
                             })
                             .then(function (response) {
-                                return response.text();
+                                return response.json();
                             })
                             .then(function (data) {
                                 console.log(data);
                                 // data is JSON-like but is just a string of characters
                                 // JSON.parse converts the string to a JSON object.
-                                const dataJSON = JSON.parse(data);
-                                console.dir(dataJSON);
-                                // get ID and JWT
-                                const id = dataJSON.user.data.ID;
-                                const token = dataJSON.jwt;
+                               
+                                const id = data.ID;
+                                const token = data.jwt;
                                 console.log("ID: " + id);
                                 console.log("JWT: " + token);
                                 // output data to the div tags in HTML section
-                                user_id.innerHTML = "ID: " + id;
-                                jwt.innerHTML = "JWT: " + token;
+                                if (id !== null) {
+                                    user_id.innerHTML = "ID: " + id;
+                                    jwt.innerHTML = "JWT: " + id;
+                                    //alert(token);
+                                } 
                               
                             })
                             // if we don't get a valid authentication for any reason
                             // handle this gracefully.
                             .catch(function(error) {
-                                user_id.innerHTML = "AUTHENTICATION FAILED - NO ID AVAILABLE";
+                                console.log(error);
+                                user_id.innerHTML = "NETWORK ERROR";
                             })
                             ;
                             
