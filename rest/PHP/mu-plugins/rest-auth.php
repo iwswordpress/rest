@@ -50,19 +50,12 @@ add_action('rest_api_init', function () {
            
             $valid = wp_authenticate_email_password(null, $Email, $Password);
             
-            // if ($ID) {
-            //     $JWT = getJWT($Email, $ID) ;
-            //     return array("email"=>$Email, "jwt"=>$JWT, "ID"=>$ID,   "method"=>"POST", "message" =>"ENDPOINT: udemy-v1-login-1"
-            //     );
-            // } else {
-            //     return null;
-            // }
-            if ($ID) {
+            if ($valid) {
                 $JWT = getJWT($Email, $ID) ;
-                    return array( "message" =>"SUCCESSFUL","jwt"=>$JWT, "ID"=>$ID, 
+                    return array( "valid" => $valid,"message" =>"SUCCESSFUL","jwt"=>$JWT, "ID"=>$ID, 
                 );
             } else {
-                    return array( "message" =>"INVALID"
+                    return array(  "valid" => $valid, "message" =>"INVALID"
                  );
             }
             

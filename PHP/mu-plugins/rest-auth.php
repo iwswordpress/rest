@@ -49,7 +49,8 @@ add_action('rest_api_init', function () {
             $ID = $user->ID;
            
             $valid = wp_authenticate_email_password(null, $Email, $Password);
-            
+            // !!!!! For DEV MODE only
+            // In PROD MODE just send back JWT
             if ($valid) {
                 $JWT = getJWT($Email, $ID) ;
                     return array( "valid" => $valid,"message" =>"SUCCESSFUL","jwt"=>$JWT, "ID"=>$ID, 
