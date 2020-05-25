@@ -6,7 +6,7 @@ get_header(); ?>
 
 <main>
    
-<div class="w3-container w3-content" style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
+<div class="w3-container w3-content" style="max-width:1200px;margin-top:10px;border-radius:10px;">
         <!-- W3 CSS Grid -->
         <div class="w3-row">
             <div class="w3-col m12">
@@ -50,20 +50,24 @@ get_header(); ?>
                                     console.log(url);
                                     fetch(url)
                                         .then(response => response.json())
-                                        .then(data => {
+                                        .then(dataArray => {
                                             // Prints result from `response.json()` in get Request
-                                            console.log("DATA", data)
-                                            console.log(data.length);
+                                            console.log("dataArray", dataArray)
+                                            console.log(dataArray.length);
                                             let outputData = "";
-
-                                            for (let i = 0; i < data.length; i++) {
-                                                outputData += data[i].id + " Post Title: " + data[i].title
-                                                    .rendered + "<br>";
+                                         
+                                            outputData +=
+                                            '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
+                                            for (let i = 0; i < dataArray.length; i++) {
+                                            outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered +
+                                                "</td></tr>";
                                             }
+                                            outputData += "</table>";
+                                           
 
                                             const main2 = document.getElementById('mainContent2');
                                             main2.innerHTML = outputData;
-                                            main2.className = "box";
+                                            //main2.className = "box";
                                         })
                                         .catch(error => console.error(error))
                                 }

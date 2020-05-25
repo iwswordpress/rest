@@ -57,15 +57,14 @@ get_header(); ?>
                                             console.log("DATA", data)
                                             console.log(data.length);
                                             let outputData = '<?php echo $SITE; ?>' + 'wp-json/wordcamp/v2/districts';
-                                            outputData += "<table><tr><th>ID</th><th>CITY</th></tr>";
+                                            outputData += '<table class="w3-table w3-border w3-striped" ><tr><th>ID</th><th>CITY</th></tr>';
                                             for (var i = 0; i < data.length; i++) {
-                                                outputData += "<tr><td> " + data[i].ID + "</td><td>" + data[i].Name +
-                                                    "<td></tr>";
+                                                outputData += "<tr><td> " + data[i].ID + "</td><td>" + data[i].Name + "</td></tr>";
                                             }
                                             outputData += "</table>";
                                             const main = document.getElementById('mainContent');
                                             main.innerHTML = outputData;
-                                            main.className = "box";
+                                            //main.className = "box";
                                         })
                                         .catch(error => console.error(error))
                                 }
@@ -79,21 +78,22 @@ get_header(); ?>
                                                 console.log(response);
                                                 return response.json();
                                             })
-                                        .then(data => {
+                                        .then(dataArray => {
                                             // Prints result from `response.json()` in get Request
-                                            console.log("POSTS", data)
-                                            console.log(data.length);
-                                            console.log("Number of posts is " + data.length);
+                                            console.log("POSTS", dataArray)
+                                            console.log(dataArray.length);
+                                            console.log("Number of posts is " + dataArray.length);
                                             let outputData =  '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts';
-                                            outputData += "<table><tr><th>ID</th><th>TITLE</th></tr>";
-                                            for (let i = 0; i < data.length; i++) {
-                                                outputData += "<tr><td>" + data[i].id + "</td><td>" + data[i].title.rendered
-                                                     + "</td></tr>";
-                                            }
-                                            outputData += "</table>";
+                                          
+                                         outputData += '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
+                                         for (let i = 0; i < dataArray.length; i++) {
+                                            outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered + "</td></tr>";
+                                         }
+                                         outputData += "</table>";
+                                        
                                             const main = document.getElementById('mainContent');
                                             main.innerHTML = outputData;
-                                            main.className = "box";
+                                            //main.className = "box";
                                         })
                                         .catch(error => console.error(error))
                                 }
