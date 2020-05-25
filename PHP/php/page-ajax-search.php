@@ -3,9 +3,10 @@
 get_header(); ?>
 
 <?php include 'server.php'; ?>
+
 <main>
-    <br><br>
-    <div class="w3-container w3-content" style="max-width:1600px;border:2px solid #2196f3;border-radius:10px;">
+   
+<div class="w3-container w3-content" style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
         <!-- W3 CSS Grid -->
         <div class="w3-row">
             <div class="w3-col m12">
@@ -73,6 +74,7 @@ get_header(); ?>
             </div><!-- end page row -->
         </div><!-- end page container -->
         <br><br><br>
+       <div style="height:100px;"></div>
 </main>
 <br><br>
 <!-- End Page Container -->

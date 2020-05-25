@@ -4,62 +4,7 @@ get_header(); ?>
 
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    :root {
-    margin-left: calc(100vw - 100%);
-    overflow-y: scroll;
-}
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Raleway", sans-serif;
-        font-size: 24px;
-        word-break: none;
 
-    }
-
-    body {
-        background: #fff;
-    }
-
-    h1 {
-        font-size: 34px;
-        font-weight: bold;
-    }
-
-
-    .intro {
-        font-weight: bolder;
-        background: #2196f3;
-        color: white;
-        padding: 10px 30px;
-        border-radius: 10px;
-    }
-
-    .outro {
-        font-weight: bolder;
-        background: white;
-        color: black;
-        padding: 10px 30px;
-        border-radius: 10px;
-        border: 3px solid orange;
-        margin-top: 30px;
-    }
-    div {
-        padding:10px;
-    }
-
-    .box {
-        border: 3px solid green;
-        border-radius: 10px;
-        padding: 10px;
-        font-weight: bold;
-    }
-</style>
 <!-- Page Container -->
 <script>
     const rnd = Math.floor(Math.random() * 100000000000);
@@ -68,21 +13,20 @@ get_header(); ?>
 
 
 <main>
-    <br><br>
-    <div class="w3-container w3-content" style="max-width:1600px;border:2px solid #2196f3;border-radius:10px;">
+<div class="w3-container w3-content" style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
         <div class="w3-row">
             <div class="w3-col m12">
                 <header class="w3-container w3-blue" style="margin-top:20px;">
                     <script>
-                        document.write(' <div style="font-size:40px;">WordCamp LOGIN</div>');
+                        document.write(' <div style="font-size:40px;">AUTHENTICATE VIA WP - RETURN ID & JWT</div>');
                     </script>
                     <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
                 <br>
-                <p>This reflects back what is sent from form but must be <strong>valid email and password of 4 or more characters.</strong>.</p>
-                <p>It send back a lot of data (view console) and displays ID and JSON WEB TOKEN (JWT) which can be stored in localStorage.</p>
+                <p>Using a user's login details, the REST endpoint validates user and returns the ID and JSON WEB TOKEN that can be used in decoupled WP sites, for example.</p>
+                <p>More information can be sent back and this can be seen in DEV > TOOLS > CONSOLE</p>
                 <p>Uses https:/49plus.co.uk/udemy/wp-json/udemy/v1/login</p>
-                <p>Use: demo@49plus.co.uk - demo </p>
+                <p>Use: <b>email: demo@49plus.co.uk</b> and <b>password: demo </b></p>
                 <form autocomplete="off" id="myForm" method="post" action="posted.php">
                     <table class="w3-table w3-bordered" style="background:white;" id="mainTable">
                         <!-- ======================== EMAIL ========================================================-->
