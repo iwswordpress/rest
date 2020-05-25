@@ -50,7 +50,7 @@
                                     console.log("INITAL RESPONSE WILL BE A STREAM");
                                     console.log(response);
                                     return response.json();
-                                    // 404 is not an error
+                                    // 404 is not an error in catch
                                     // response.ok == true to indicate in 200 range
                                  })
                                  .then(dataArray => {
@@ -72,7 +72,7 @@
                                     main.innerHTML = outputData;
                                     main.className = "box";
                                  })
-                                 .catch(error => console.error(error)) // genuine netowrk errors not empty 4040 response
+                                 .catch(error => console.error(error)) // genuine netowrk errors not empty 404 response
                            }
                         </script>
                         <!-- ================ MAIN CODE ======================= -->
