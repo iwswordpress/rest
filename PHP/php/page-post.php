@@ -62,10 +62,8 @@ get_header(); ?>
                 <script>
                     const btn = document.getElementById('btnSubmit');
                     btn.addEventListener('click', formHandler);
-
-                    //jwt.innerHTML = "Data being sent: " + emailValue + " - " + passwordValue;
+                 
                     function formHandler() {
-
 
                         const title = document.getElementById('title').value;
                         const data = document.getElementById('data').value;
@@ -74,21 +72,22 @@ get_header(); ?>
                         console.log("Content", data);
                         const output = document.getElementById('output');
                         const JWT = localStorage.getItem('JWT');
+                        // Use HTML FormData object enable the endpoint to get POST data
                         const formData = new FormData();
                         formData.append('content', data);
                         formData.append('title', title);
-                        formData.append('jwt', JWT);
+                        formData.append('jwt', JWT); // to demonstrate additional hidden fields
 
-                        // API CALL 
-                        //let apiUrl = 'https://wpjs.co.uk/app/mirror';
+                        // Genereate URL
                         let apiUrl = '<?php echo $SITE; ?>' + 'wp-json/owt/v1/rest02';
                         console.log("url: " + apiUrl);
                         fetch(apiUrl, {
-                                method: 'POST',
-                                body: formData
+                                method: 'POST', // set FETCH type GET/POST
+                                body: formData  // append form data
                             })
                             .then(function (response) {
-                                return response.text();
+                                console.log(response);
+                                return response.text(); // convert stream response tot text
                             })
                             .then(function (data) {
                                 console.log(data);

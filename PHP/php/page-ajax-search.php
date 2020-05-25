@@ -34,15 +34,17 @@ get_header(); ?>
                             <div id="mainContent2"></div>
                             <!-- ================ MAIN CODE ======================= -->
                             <script>
+                                // DOM Elements
                                 const btnSearch = document.getElementById('btnSearch');
                                 btnSearch.addEventListener('click', searchHandler);
 
-
+                                // GET SEARCH DATA
                                 function searchHandler() {
                                     //alert("TEST");
                                     console.log("== SEARCH ===");
                                     const x = document.getElementById('x').value;
                                     console.log('search for: ', x);
+                                    // Generate URL
                                     const url = '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts?search=' + x;
 
                                     console.log(url);

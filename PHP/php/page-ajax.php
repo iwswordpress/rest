@@ -32,12 +32,19 @@ get_header(); ?>
                             <!-- ================ MAIN CODE ======================= -->
                             <!-- Very good short video on FETCH JSON https://www.youtube.com/watch?v=cuEtnrL9-H0 -->
                             <!-- Very good short video on PROMISES https://www.youtube.com/watch?v=DHvZLI7Db8E -->
+                            <!-- 
+                                jQuery .done .fail .always
+                                fetch  .then .catch .finally 
+                            -->
                             <script>
+                                // DOM Elements
                                 const btnSearch = document.getElementById('btnSearch');
                                 btnSearch.addEventListener('click', loadData);
                                 const btnPosts = document.getElementById('btnPosts');
                                 btnPosts.addEventListener('click', loadPosts);
+                                // GET MySQL DATA
                                 function loadData() {
+                                    // Generate URL
                                     const url = '<?php echo $SITE; ?>' + 'wp-json/wordcamp/v2/districts';
                                     console.log(url);
                                     fetch(url)
@@ -62,7 +69,9 @@ get_header(); ?>
                                         })
                                         .catch(error => console.error(error))
                                 }
+                                // GET POSTS
                                 function loadPosts() {
+                                    // Generate URL
                                     const url =  '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts';
                                     console.log(url);
                                     fetch(url)

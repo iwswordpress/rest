@@ -106,7 +106,8 @@ get_header(); ?>
                                  headers: { 'X-WP-Nonce': nonceValue}
                             })
                             .then(function (response) {
-                                return response.text();
+                                console.log(response);
+                                return response.text(); // convert stream response tot text
                             })
                             .then(function (data) {
                                 console.log(data);

@@ -6,6 +6,7 @@ get_header(); ?>
 
 <div id="primary" >
     <div id="content" class="site-content" role="main" style="padding-left:10px; padding-right:10px;">
+        <br>
         <h1>This page is a WordPress NONCE test page.</h1>
 
         <p>We create a nonce and WP uses a label that we give it, in this case 'NoncePageTest'.</p>

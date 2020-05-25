@@ -3,7 +3,7 @@
 add_action('rest_api_init', function () {
     register_rest_route( 'owt/v1', 'rest02',array(
                //  'methods'  => WP_REST_Server::READABLE,
-                  'methods'  => WP_REST_Server::CREATABLE,
+                  'methods'  => WP_REST_Server::CREATABLE, // could just use 'POST
                   'callback' => 'rest02_route',
                   'args'     => array (
                         'title'  => array( 

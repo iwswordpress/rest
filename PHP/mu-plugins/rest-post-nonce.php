@@ -2,7 +2,7 @@
 // POST PARAMETER
 add_action('rest_api_init', function () {
     register_rest_route( 'owt/v1', 'rest03',array(
-                  'methods'  => WP_REST_Server::CREATABLE,
+                  'methods'  => WP_REST_Server::CREATABLE, // could just use 'POST
                   'callback' => 'rest03_route',
                   'args'     => array (
                         'title'  => array( 
