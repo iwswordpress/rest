@@ -21,8 +21,6 @@ get_header(); ?>
                     <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
                 <br>
-                <p>Create a post. Min length 5 characters each field.</p>
-                <p>It also sends a hidden JWT token from localStorage with a random number set at start of page.</p>
                 <p>Uses <?php echo $SITE; ?>wp-json/owt/v1/rest02</p>
                 <form autocomplete="off" id="myForm" method="post" action="posted.php">
                     <table class="w3-table w3-bordered" style="background:white;" id="mainTable">
@@ -45,7 +43,7 @@ get_header(); ?>
                                 <input id="btnSubmit" name="btnSubmit" class="w3-btn w3-border w3-large w3-blue"
                                     type="button" value="SEND FORM">
                             </td>
-                            <td></td>
+                            <td>Min length 5 characters each field.</td>
                         </tr>
                     </table>
                 </form>

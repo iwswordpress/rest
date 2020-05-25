@@ -1,11 +1,6 @@
 <?php
 
 get_header(); ?>
-<!-- ENTER YOUR rest-setup API ORIGIN URL HERE -->
-<!-- ENTER YOUR REST API ORIGIN URL HERE -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
 
 <!-- Page Container -->
 <?php include 'server.php'; ?>

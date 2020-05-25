@@ -13,7 +13,8 @@ get_header(); ?>
 
 
 <main>
-<div class="w3-container w3-content" style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
+    <div class="w3-container w3-content"
+        style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
         <div class="w3-row">
             <div class="w3-col m12">
                 <header class="w3-container w3-blue" style="margin-top:20px;">
@@ -23,17 +24,21 @@ get_header(); ?>
                     <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
                 <br>
-                <p>Using a user's login details, the REST endpoint validates user and returns the ID and JSON WEB TOKEN that can be used in decoupled WP sites, for example.</p>
-                <p>More information can be sent back and this can be seen in DEV > TOOLS > CONSOLE</p>
-                <p>Uses https:/49plus.co.uk/udemy/wp-json/udemy/v1/login</p>
-                <p>Use: <b>email: demo@49plus.co.uk</b> and <b>password: demo </b></p>
+                <p>
+                    Using a user's login details, the REST endpoint validates user and returns the ID and JSON WEB TOKEN
+                    that can be used in decoupled WP sites, for example.<br>
+                    More information can be sent back and this can be seen in DEV > TOOLS > CONSOLE.<br>
+                    Uses https:/49plus.co.uk/udemy/wp-json/udemy/v1/login.<br>
+                    Use: <b>email: demo@49plus.co.uk</b> and <b>password: demo </b>
+                </p>
                 <form autocomplete="off" id="myForm" method="post" action="posted.php">
                     <table class="w3-table w3-bordered" style="background:white;" id="mainTable">
                         <!-- ======================== EMAIL ========================================================-->
                         <tr>
                             <td style="width:150px;">Email <br></td>
                             <td style="width:600px;">
-                                <input id="email" type="text" name="email" value="demo@49plus.co.uk" placeholder="enter...">
+                                <input id="email" type="text" name="email" value="demo@49plus.co.uk"
+                                    placeholder="enter...">
                             </td>
                         </tr>
                         <tr>
@@ -56,8 +61,16 @@ get_header(); ?>
                     <tr>
                         <td><b> AUTHENTICATION:</b></td>
                     </tr>
-                    <tr> <td><div id="user_id" ></div></td></tr>
-                    <tr> <td><div id="jwt" style="word-break:break-all;"></div></td></tr>
+                    <tr>
+                        <td>
+                            <div id="user_id"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="jwt" style="word-break:break-all;"></div>
+                        </td>
+                    </tr>
                 </table>
 
                 <script>
@@ -103,32 +116,31 @@ get_header(); ?>
                                 console.log(data);
 
                                 const message = data.message;
-                                const id = data.ID; 
+                                const id = data.ID;
                                 const token = data.jwt;
                                 const validID = data.valid.ID || 0; // if successful has id, if not set to zero
-                                console.log("VALID ID = " + validID)                                
+                                console.log("VALID ID = " + validID)
                                 console.log("RESULT: " + message);
                                 console.log("ID: " + id);
                                 console.log("JWT: " + token);
                                 if (validID > 0) {
                                     user_id.innerHTML = message + " ID: " + id;
-                                    jwt.innerHTML = "JWT: " + token;  
+                                    jwt.innerHTML = "JWT: " + token;
                                 } else {
                                     user_id.innerHTML = "INVALID LOGIN";
                                 }
-                                
+
                             })
                             // network failure rather than a 400
                             // handle this gracefully.
-                            .catch(function(error) {
+                            .catch(function (error) {
                                 console.log(error);
                                 user_id.innerHTML = "NETWORK ERROR";
                             })
-                            .finally(function() {
+                            .finally(function () {
                                 // this occurs at end regardless
-                            })
-                            ;
-                            
+                            });
+
                     }
                 </script>
                 <!-- ================ MAIN CODE ======================= -->

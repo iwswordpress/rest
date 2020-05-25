@@ -21,11 +21,7 @@ get_header(); ?>
                     <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
                 <br>
-                <p>Create a post. Min length 5 characters each field.</p>
-                <p>It also sends a hidden NONCE token to verify that a genuine page sent this data as well as a JWT.</p>
-                <p>NONCE does not work if logged in - use logged-in-user details to verify.</p>
-                <p>Uses  <?php echo $SITE; ?>wp-json/owt/v1/rest03</p>
-                <p>NONCES a maximum of two ticks = 24 hours - <a href="https://www.bynicolas.com/code/wordpress-nonce/" target="_blank">great article</a></p>
+                <p>Create a post.  Uses a hidden NONCE token to verify that a genuine page sent this data. Uses  <?php echo $SITE; ?>wp-json/owt/v1/rest03. NONCES have a maximum of two ticks = 24 hours - <a href="https://www.bynicolas.com/code/wordpress-nonce/" target="_blank">great article</a></p>
                 <form autocomplete="off" id="myForm" method="post" action="posted.php">
                     <table class="w3-table w3-bordered" style="background:white;" id="mainTable">
                         <!-- ======================== EMAIL ========================================================-->
@@ -47,7 +43,7 @@ get_header(); ?>
                                 <input id="btnSubmit" name="btnSubmit" class="w3-btn w3-border w3-large w3-blue"
                                     type="button" value="SEND FORM">
                             </td>
-                            <td></td>
+                            <td>Min length 5 characters each field.</td>
                         </tr>
                     </table>
                 </form>
