@@ -36,6 +36,8 @@ get_header(); ?>
                                 jQuery .done .fail .always
                                 fetch  .then .catch .finally 
                             -->
+                            <!-- In mixed owner sites, please use register and enqueueu scripts -->
+                            <!-- Page level scripts added for demo purposes -->
                             <script>
                                 // DOM Elements
                                 const btnSearch = document.getElementById('btnSearch');

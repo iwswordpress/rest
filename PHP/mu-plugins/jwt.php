@@ -56,4 +56,3 @@ function base64UrlDecode($data)
     return base64_decode($paddedData);
 }
  
-?>

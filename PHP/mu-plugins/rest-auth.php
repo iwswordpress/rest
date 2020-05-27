@@ -85,4 +85,3 @@ add_action('rest_api_init', function () {
     // ***************** Create the JWT. The code in jwt.php in mu-plugins folder **********************
    return  generateJWT('sha256', $header, $payload, $secret);
 }
-?>

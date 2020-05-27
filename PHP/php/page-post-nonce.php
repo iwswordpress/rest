@@ -78,14 +78,16 @@ get_header(); ?>
                             session_id = 'logged-out';
                         }
                        
-                        // one can use localize_script to create global JS variable to use in PHP
-                        //
+                        // One can use localize_script to create global JS variable to use in PHP
+                        // https://wordpress.stackexchange.com/questions/119573/is-it-possible-to-use-wp-localize-script-to-create-global-js-variables-without-a 
+                        // gives other possibilities for creating global JS vvariables to work across all JS scripts.
+
                         // Must be wp_rest to work 
                         // Either _wpnonce as POST parameter or use headers: { 'X-WP-Nonce': nonceValue} in AJAX
                         // https://stackoverflow.com/questions/41878315/wp-ajax-nonce-works-when-logged-out-but-not-when-logged-in
                         // https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
                         
-                        // We could use wp_localize_script but this is acceptable
+                        
                         const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>'; // ! must be wp_rest
                         console.log("form nonceValue: " + nonceValue);
 
@@ -96,7 +98,7 @@ get_header(); ?>
                         formData.append('_wpnonce', nonceValue); 
                         formData.append('session_id', session_id); 
                         // must use _wpnonce as parameter in POST otherwise headers below must be used
-                        
+                        // SITE can be hard coded or added to a wp_localize_script() to create global JS variables
                         let apiUrl = '<?php echo $SITE; ?>' + 'wp-json/owt/v1/rest03';
                         console.log("url: " + apiUrl);
                         fetch(apiUrl, {

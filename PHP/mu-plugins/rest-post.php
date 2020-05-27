@@ -67,4 +67,4 @@ add_action('rest_api_init', function () {
             return array("status"=> "SUCCESS", "method"=>"POST", "message" =>"ENDPOINT: owt-v1-rest02", "parameters" => $parameters);
         }
   }
-?>
+

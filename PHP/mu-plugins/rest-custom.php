@@ -91,4 +91,3 @@ function total_users($request) {
   $response->set_status(200);
   return $response;
 }
-?>
