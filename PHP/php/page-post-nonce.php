@@ -82,6 +82,9 @@ get_header(); ?>
                         // https://wordpress.stackexchange.com/questions/119573/is-it-possible-to-use-wp-localize-script-to-create-global-js-variables-without-a 
                         // gives other possibilities for creating global JS vvariables to work across all JS scripts.
 
+                        // example code wp_localize_js_var.php in mu-plugins
+                        // test.js
+
                         // Must be wp_rest to work 
                         // Either _wpnonce as POST parameter or use headers: { 'X-WP-Nonce': nonceValue} in AJAX
                         // https://stackoverflow.com/questions/41878315/wp-ajax-nonce-works-when-logged-out-but-not-when-logged-in
