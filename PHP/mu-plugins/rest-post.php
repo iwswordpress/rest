@@ -59,7 +59,7 @@ add_action('rest_api_init', function () {
                 'post_content'  => $content,
                 'post_status'   => 'publish',
                 'post_author'   => 1,
-                'post_category' => array( 3 )
+                'post_category' => array( 4 )
             );
             // Insert the post into the database
             wp_insert_post( $my_post );
