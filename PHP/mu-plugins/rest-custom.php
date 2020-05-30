@@ -8,9 +8,9 @@
 // register_rest_field ( 'name-of-post-type', 'name-of-field-to-return', array-of-callbacks-and-schema() )
 function add_author_name_to_posts() {
     register_rest_field('post', 'authorName', array( 
-      'get_callback' => function() {
-        return get_the_author();
-    }
+        'get_callback' => function() {
+          return get_the_author();
+      }
     ));
   }
 add_action('rest_api_init', 'add_author_name_to_posts');
@@ -41,15 +41,15 @@ function get_districts() {
       array_push($json_data,$json_array);  
   }
   wp_reset_query();
-  $posts =  $json_data; 
   // Create headers
-  $response = new WP_REST_Response($posts);
+  $response = new WP_REST_Response( $json_data);
   // Set response status - this can be customised 
   $response->set_status(200);
   return $response;
 }
 // ================ ADD CUSTOM ENDPOINT TO WP REST API ========================
-// NAMESPACE is wordcamp/v1
+// NAMESPACE is wordcamp/v2
+// https://49plus.co.uk/udemy/wp-json/wordcamp/v2/latest-posts/4
 add_action('rest_api_init', function () {
     register_rest_route( 'wordcamp/v2', 'latest-posts/(?P<category_id>\d+)',array(
                   'methods'  => 'GET', 

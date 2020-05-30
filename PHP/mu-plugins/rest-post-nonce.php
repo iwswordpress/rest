@@ -78,7 +78,7 @@ add_action('rest_api_init', function () {
             // Do standard validations
             $title = sanitize_text_field($request->get_param("title"));
             $content = sanitize_text_field($request->get_param("content"));
-            $jwt = $request->get_param("jwt");
+            $jwt = sanitize_text_field($request->get_param("jwt"));
             $session_id = sanitize_text_field($request->get_param("session_id"));
             if (!$session_id) $session_id = "logged out";
             $nonce = strval($request->get_param("_wpnonce")); // or value from header X-Wp-nonce

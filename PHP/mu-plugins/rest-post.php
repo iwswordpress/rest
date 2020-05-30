@@ -63,7 +63,7 @@ add_action('rest_api_init', function () {
             );
             // Insert the post into the database
             wp_insert_post( $my_post );
-            // send response message as needed...
+            // send custom response message as needed...
             return array("status"=> "SUCCESS", "method"=>"POST", "message" =>"ENDPOINT: owt-v1-rest02", "parameters" => $parameters);
         }
   }
