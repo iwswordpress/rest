@@ -87,15 +87,15 @@ get_header(); ?>
                                             console.log("Number of posts is " + dataArray.length);
                                             let outputData =  '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts';
                                           
-                                         outputData += '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
-                                         for (let i = 0; i < dataArray.length; i++) {
-                                            outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered + "</td></tr>";
-                                         }
-                                         outputData += "</table>";
-                                        
+                                            outputData += '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
+                                            for (let i = 0; i < dataArray.length; i++) {
+                                                outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered + "</td></tr>";
+                                            }
+                                            outputData += "</table>";
+                                            
                                             const main = document.getElementById('mainContent');
                                             main.innerHTML = outputData;
-                                            //main.className = "box";
+                                              
                                         })
                                         .catch(error => console.error(error))
                                 }

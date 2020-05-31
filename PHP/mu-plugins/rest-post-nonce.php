@@ -97,7 +97,7 @@ add_action('rest_api_init', function () {
                 default:
                     $message = 'Nonce is invalid. ';
             }
-            if ($check == 1 || $check ==2) {
+            if ($check == 1 || $check == 2) {
                 // Create post object
                 $my_post = array(
                     'post_title'    => $title,
