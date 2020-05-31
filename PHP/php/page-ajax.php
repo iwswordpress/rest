@@ -109,12 +109,12 @@ get_header(); ?>
                                     global $wpdb;
                                     $db =  $wpdb->dbname;            
                                 ?>
-                                <p><?php echo "<b>SERVER: </b>".$SITE." <b>DB: </b>".$db;?></p> 
+                                <!-- <p><?php echo "<b>SERVER: </b>".$SITE." <b>DB: </b>".$db;?></p> 
                                 <p><b>Database:</b> <?php echo $db ?></p>
                                 <p><?php echo "<b>CHILD get_theme_file_uri():</b> <br>".get_theme_file_uri(); ?></p>
                                 <p><?php echo "<b>CHILD IMAGES FOLDER get_theme_file_uri():</b> <br>".get_theme_file_uri()."/images/"; ?></p>
                                 <p><?php echo "<b>PARENT get_template_directory_uri():</b> <br>". get_template_directory_uri(); ?>
-                                </p>
+                                </p> -->
                               
                             </div>
                             <br><br><br>

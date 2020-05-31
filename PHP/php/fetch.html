@@ -45,6 +45,7 @@
                               const url = 'https://49plus.co.uk/udemy/wp-json/wp/v2/posts';
                               console.log(url);
                               var data;
+                              // DO AJAX
                               fetch(url)
                                  .then(response => {
                                     console.log("INITAL RESPONSE WILL BE A STREAM");
@@ -59,8 +60,9 @@
                                     console.log("POSTS", dataArray)
                                     console.log(dataArray.length);
                                     console.log("Number of posts is " + dataArray.length);
-                                    let outputData =
-                                    'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
+                                    let outputData = 'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
+
+                                    // JS OUTPUT...
                                     outputData +=
                                        '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
                                     for (let i = 0; i < dataArray.length; i++) {
@@ -68,6 +70,7 @@
                                           "</td></tr>";
                                     }
                                     outputData += "</table>";
+                                    // INSERT OUTPUT INTO PAGE
                                     const main = document.getElementById('mainContent');
                                     main.innerHTML = outputData;
                                     main.className = "box";
