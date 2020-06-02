@@ -15,4 +15,13 @@ function load_scripts() {
    );
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
-  
+
+// https://developer.wordpress.org/reference/classes/wp_scripts/localize/
+// is_array( $l10n ) - holds the php associative array $l10n
+// $script = "var $object_name = " . wp_json_encode( $l10n ) . ';'
+
+// on page we could write
+// $wp_rest = wp_create_nonce('wp_rest');
+// <script>
+// var siteObj = {"wp_rest": + "<?php echo $wp_rest; ?&gt;"};
+// </script>

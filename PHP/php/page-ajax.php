@@ -77,11 +77,13 @@ get_header(); ?>
                                     console.log(url);
                                     fetch(url)
                                         .then(response => {
+                                                console.log("We get back a STREAM initially...");
                                                 console.log(response);
                                                 return response.json();
                                             })
                                         .then(dataArray => {
                                             // Prints result from `response.json()` in get Request
+                                            console.log("RESPONSE.JSON() is used to convert stream to JSON...");
                                             console.log("POSTS", dataArray)
                                             console.log(dataArray.length);
                                             console.log("Number of posts is " + dataArray.length);
