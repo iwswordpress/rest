@@ -50,6 +50,11 @@
                                  .then(response => {
                                     console.log("INITAL RESPONSE WILL BE A STREAM");
                                     console.log(response);
+                                    if (response.ok) {
+                                       console.log("In 200 and 300 codes");
+                                    } else {
+                                       console.log("!!!!! UNSUCCESSFUL GET REQUEST");
+                                    }
                                     return response.json();
                                     // 404 is not an error in catch
                                     // response.ok == true to indicate in 200 range
