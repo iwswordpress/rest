@@ -17,8 +17,8 @@ get_header(); ?>
         <p><a href="https://developer.wordpress.org/plugins/security/nonces/" target="_blank">https://developer.wordpress.org/plugins/security/nonces/</a></p>
         <p>We can verify a supplied nonce value against the value WP created. It returns true or false.</p>
         <p>As the WP nonce was created on the page in WP, we can be sure the data received came from that page.</p>
-        <p>WP uses the tick cycle of 12 hrs starting from midnight.</p>
-        <p>A nonce is valid for 2 ticks, so a tick will not be valid in the third tick, so a <em><b>maximum</b></em> of 24hrs <em><b>not a full 24hrs</b></em>.</p>
+        <p>A tick covers a period of 12hrs starting at midnight and midday.</p>
+        <p>A nonce is valid for two ticks only. So it will be valid for a MAXIMUM of 24 hrs if created in the first minute of its birth tick. </p>
         <p>Great article on nonces: <a href="https://www.bynicolas.com/code/wordpress-nonce/" target="_blank">https://www.bynicolas.com/code/wordpress-nonce/</a></p>
       
         <?php 
