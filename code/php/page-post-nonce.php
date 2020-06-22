@@ -2,7 +2,6 @@
 
 get_header(); ?>
 
-
 <!-- Page Container -->
 <script>
     const rnd =  Math.floor(Math.random() * 100000000000);
@@ -87,12 +86,12 @@ get_header(); ?>
 
                         // Must be wp_rest to work 
                         // Either _wpnonce as POST parameter or use headers: { 'X-WP-Nonce': nonceValue} in AJAX
-                        // https://stackoverflow.com/questions/41878315/wp-ajax-nonce-works-when-logged-out-but-not-when-logged-in
-                        // https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
-                        
+
                         
                         const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>'; // ! must be wp_rest
-                        console.log("form nonceValue: " + nonceValue);
+                        console.log("form nonceValue via PHP: " + nonceValue);
+                        // https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
+                        console.log("GLOBAL JS OBJECT: " + siteObj.wpNonce);
 
                         const formData = new FormData();
                         formData.append('title', title);
@@ -108,7 +107,7 @@ get_header(); ?>
                                 method: 'POST',
                                 body: formData,
                                 // if one does not use _wpnonce as POST parameter then one can send nonce in headers as below
-                                 headers: { 'X-WP-Nonce': nonceValue}
+                                headers: { 'X-WP-Nonce': nonceValue}
                             })
                             .then(function (response) {
                                 console.log(response);
@@ -122,7 +121,8 @@ get_header(); ?>
                     }
                 </script>
                
-                <!-- ================ MAIN CODE ======================= -->
+                <!-- =====
+                =========== MAIN CODE ======================= -->
                 <br><br><br>
             </div><!-- end col m12 --->
         </div><!-- end container card -->

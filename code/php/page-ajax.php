@@ -41,10 +41,13 @@ get_header(); ?>
                             <!-- Page level scripts added for demo purposes -->
                             <script>
                                 // DOM Elements
+                                    //LOAD DATA - custom MySQL table
                                 const btnSearch = document.getElementById('btnSearch');
                                 btnSearch.addEventListener('click', loadData);
+                                    //LOAD POSTS - latest 10 possts
                                 const btnPosts = document.getElementById('btnPosts');
                                 btnPosts.addEventListener('click', loadPosts);
+
                                 // GET MySQL DATA
                                 function loadData() {
                                     // Generate URL

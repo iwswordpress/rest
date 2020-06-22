@@ -16,7 +16,7 @@ function add_author_name_to_posts() {
 add_action('rest_api_init', 'add_author_name_to_posts');
 
 // ================ ADD CUSTOM ENDPOINT  wordcamp/v2/districts TO WP REST API ========================
-// NAMESPACE is: wordcamp/v1
+// NAMESPACE is: wordcamp/v2
 // ROUTE is: districts
 // Carry out MySQL query
 add_action('rest_api_init', function () {
@@ -32,7 +32,8 @@ function get_districts() {
   global $wpdb;
   $results = $wpdb->get_results($wpdb->prepare($sql, ""));
   // This is PHP code to create a JSON like data structure
-  $json_data = array();//create the array  
+  $json_data = array();//create the array 
+  $json_array = array(); 
   foreach ($results as $objRS)//foreach loop  
   {  
       $json_array['ID'] = $objRS->ID;  
@@ -47,6 +48,44 @@ function get_districts() {
   $response->set_status(200);
   return $response;
 }
+
+
+// ================ ADD CUSTOM ENDPOINT TO WP REST API ========================
+// NAMESPACE is wordcamp/v2
+// https://49plus.co.uk/udemy/wp-json/wordcamp/v2/totalusers
+// Carry out MySQL query to get total number of users
+add_action('rest_api_init', function () {
+  register_rest_route( 'wordcamp/v2', 'totalusers',array(
+                'methods'  => 'GET',
+                'callback' => 'total_users'
+      ));
+});
+function total_users($request) {
+  $request_type = $_SERVER['REQUEST_METHOD'];
+  if ($request_type == "GET") { 
+    global $wpdb;
+    $sql = "SELECT COUNT(*) AS 'TOTAL' FROM ".$wpdb->prefix."users";
+    $results = $wpdb->get_results($sql);
+    wp_reset_query();
+  }
+  $response = new WP_REST_Response($results);
+  $response->set_status(200);
+  return $response;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ================ ADD CUSTOM ENDPOINT TO WP REST API ========================
 // NAMESPACE is wordcamp/v2
 // https://49plus.co.uk/udemy/wp-json/wordcamp/v2/latest-posts/4
@@ -70,24 +109,3 @@ add_action('rest_api_init', function () {
     $response->set_status(200);
     return $response;
   }
-// ================ ADD CUSTOM ENDPOINT TO WP REST API ========================
-// NAMESPACE is wordcamp/v2
-// Carry out MySQL query to get total number of users
-add_action('rest_api_init', function () {
-  register_rest_route( 'wordcamp/v2', 'totalusers',array(
-                'methods'  => 'GET',
-                'callback' => 'total_users'
-      ));
-});
-function total_users($request) {
-  $request_type = $_SERVER['REQUEST_METHOD'];
-  if ($request_type == "GET") { 
-    global $wpdb;
-    $sql = "SELECT COUNT(*) AS 'TOTAL' FROM ".$wpdb->prefix."users";
-    $results = $wpdb->get_results($sql);
-    wp_reset_query();
-  }
-  $response = new WP_REST_Response($results);
-  $response->set_status(200);
-  return $response;
-}

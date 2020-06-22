@@ -43,7 +43,7 @@ add_action('rest_api_init', function () {
                             'type' => 'string',
                             'required' => true,
                             'validate_callback' => function($param){
-                                if ($param > -1) {
+                                if (strlen($param) > 0) {
                                     return true;
                                 } else {
                                     return false;

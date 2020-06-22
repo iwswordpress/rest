@@ -18,7 +18,6 @@ get_header(); ?>
                     <script>
                         document.write(' <div style="font-size:40px;">Add a POST</div>');
                     </script>
-                    <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
                 </header>
                 <br>
                 <p>Uses <?php echo $SITE; ?>wp-json/owt/v1/rest02</p>
@@ -60,19 +59,25 @@ get_header(); ?>
                 </table>
 
                 <script>
+                    // ADD EVENT LISTENER TO SUBMIT BUTTON
                     const btn = document.getElementById('btnSubmit');
                     btn.addEventListener('click', formHandler);
                  
                     function formHandler() {
-
+                        // GET INPUT VALUES
                         const title = document.getElementById('title').value;
                         const data = document.getElementById('data').value;
 
                         console.log("Title", title);
                         console.log("Content", data);
-                        const output = document.getElementById('output');
-                        const JWT = localStorage.getItem('JWT');
+                        // GET REFERENCE TO OUTPUT AREA
+                        const output = document.getElementById('output'); // where we will ouput debug response
+                        // AN EXTRA BIT OF DATA TO SEND BEHIND THE SCENES
+                        const JWT = localStorage.getItem('JWT'); // creating a token to show we can send hidden input data
+
                         // Use HTML FormData object enable the endpoint to get POST data
+                        // We could send JSON data and use json_decode on server but I prefer
+                        // to use the Form object so that the server sees it as a regular form post
                         const formData = new FormData();
                         formData.append('content', data);
                         formData.append('title', title);
@@ -81,8 +86,9 @@ get_header(); ?>
                         // Genereate URL
                         let apiUrl = '<?php echo $SITE; ?>' + 'wp-json/owt/v1/rest02';
                         console.log("url: " + apiUrl);
+                        // USE FETCH API
                         fetch(apiUrl, {
-                                method: 'POST', // set FETCH type GET/POST
+                                method: 'POST', // set FETCH type GET/POST, if none specified GET is default
                                 body: formData  // append form data
                             })
                             .then(function (response) {
