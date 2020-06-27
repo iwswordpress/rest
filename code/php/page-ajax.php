@@ -130,7 +130,7 @@ get_header(); ?>
                                             console.log(data.length);
                                             let outputData = '<?php echo $SITE; ?>' + 'wp-json/wp/v2/posts?_fields=id,authorName,acf';
                                             outputData +=
-                                                '<table class="w3-table w3-border w3-striped" ><tr><th>ID</th><th>CITY</th></tr>';
+                                                '<table class="w3-table w3-border w3-striped" ><tr><th>ID</th><th>SOURCE</th></tr>';
                                             for (var i = 0; i < data.length; i++) {
                                                 outputData += "<tr><td> " + data[i].id + "</td><td>" + data[i].acf.source + "</td></tr>";
                                             }
