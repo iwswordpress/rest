@@ -64,11 +64,9 @@
                                     let outputData = 'https://49plus.co.uk/udemy/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
 
                                     // JS OUTPUT...
-                                    outputData +=
-                                       '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
+                                    outputData += '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
                                     for (let i = 0; i < dataArray.length; i++) {
-                                       outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered +
-                                          "</td></tr>";
+                                       outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered + "</td></tr>";
                                     }
                                     outputData += "</table>";
                                     // INSERT OUTPUT INTO PAGE
