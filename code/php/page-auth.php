@@ -6,12 +6,6 @@ get_header(); ?>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-- Page Container -->
-<script>
-    const rnd = Math.floor(Math.random() * 100000000000);
-    localStorage.setItem("JWT", rnd);
-</script>
-
-
 <main>
     <div class="w3-container w3-content"
         style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
@@ -97,7 +91,7 @@ get_header(); ?>
                         formData.append('email', emailValue);
                         formData.append('password', passwordValue);
                         // test to see if it works without FormData
-                        // it deoesn't
+                        // it doesn't
                         // const testdata = {
                         //     "email": emailValue,
                         //     "password": passwordValue       

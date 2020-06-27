@@ -8,19 +8,19 @@ add_action('rest_api_init', function () {
                   'args'     => array (
                         'title'  => array( 
                             'type'             => 'string',
-                            // REQUIRED AND VALIDAE_CALLBACK OPTIONAL
-                        //     'required'         => true,
-                        //     'validate_callback' => function($param){
-                        //         if (strlen($param) > 4) {
-                        //             return true;
-                        //         } else {
-                        //             return false;
-                        //         }
-                        //    }
+                            // REQUIRED AND VALIDATE_CALLBACK OPTIONAL
+                            'required'         => true,
+                            'validate_callback' => function($param){
+                                if (strlen($param) > 4) {
+                                    return true;
+                                } else {
+                                    return false;
+                                }
+                           }
                         ),
                         'content'  => array(
                             'type'     => 'string',
-                            // REQUIRED AND VALIDAE_CALLBACK OPTIONAL
+                            // REQUIRED AND VALIDATE_CALLBACK OPTIONAL
                             'required' => true,
                             'validate_callback' => function($param){
                                 if (strlen($param) > 4 ) {
@@ -30,9 +30,11 @@ add_action('rest_api_init', function () {
                                 }
                             }
                         ),
+                        // This is an optional 'hidded' input we are sending over
+                        // Just to demonstrate - not required
                         'jwt'    => array(
                             'type' => 'integer',
-                            // REQUIRED AND VALIDAE_CALLBACK OPTIONAL
+                            // REQUIRED AND VALIDATE_CALLBACK OPTIONAL
                             'required' => true,
                             'validate_callback' => function($param){
                                 if ($param > -1) {
@@ -45,7 +47,7 @@ add_action('rest_api_init', function () {
                   )
         ));
   });
-  // CALLBACK FUNTION
+  // CALLBACK FUNCTION
   function rest02_route(WP_REST_Request $request) { // works without WP_REST_Request
         // REQUEST FILTER OPTIONAL - JUST ADDED TO SHOW WHAT CAN BE DONE
         // WE MIGHT HAVE ONE ENDPOINT THAT HANDLES GET< POST, DELETE ETC.
@@ -74,7 +76,7 @@ add_action('rest_api_init', function () {
             // send custom response message as needed...
             // WP will convert as needed to be sent to client
             return array(
-                "status"     => "SUCCESS", 
+                "status"     => "SUCCESS", // these fields can have add field name
                 "method"     => "POST", 
                 "message"    => "ENDPOINT: owt-v1-rest02", 
                 "parameters" => $parameters

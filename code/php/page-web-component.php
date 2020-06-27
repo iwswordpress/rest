@@ -20,7 +20,7 @@ get_header(); ?>
                      <style>
                         :root {}
                         body {
-                           background-color: rgb(250, 245, 245);
+                           background-color: #fff;
                            box-sizing: border-box;
                            overflow-y: scroll;
                            font-family: "Quicksand";
@@ -31,7 +31,7 @@ get_header(); ?>
                            grid-gap: 20px;
                            border: 3px solid #ffa500;
                            border-radius: 10px;
-                           background: #eee;
+                           background: #fff;
                            padding: 10px;
                            overflow:hidden;
                         }
@@ -46,13 +46,9 @@ get_header(); ?>
                         <main>
                            <div class="main">
                               <div class="postGrid">
-
-
                                  <!-- ================== WEB COMPONENTS HERE ================== -->
-<!-- -->       
-<!-- -->  
-<!-- -->  
-<!-- -->     
+       
+<!-- -->   
 <!-- -->                         
                                  <all-posts></all-posts>
 <!-- -->                                  
@@ -60,14 +56,9 @@ get_header(); ?>
 <!-- -->  
 <!-- -->  
 <!-- -->  
-<!-- -->  
-<!-- -->  
                                  <!-- ================== WEB COMPONENTS HERE ================== -->
 <!-- -->  
-<!-- -->  
-<!-- -->  
-<!-- -->  
-<!-- -->                                
+<!-- -->                   
                                  <script>
                                     const template = document.createElement('template');
                                     template.innerHTML = `
@@ -92,7 +83,7 @@ get_header(); ?>
                                              outline:none;
                                           }
                                           button:hover {
-                                             background: #ccc;
+                                             background: #fff;
                                              color:white;
                                              outline:none;
                                           }
@@ -146,6 +137,8 @@ get_header(); ?>
                                           `;
                                        }
                                     }
+
+                                    // This would normally be a JS file that is enqueued...
                                     customElements.define('the-post', PostDetail);
                                     class PostList extends HTMLElement {
                                        constructor() {
@@ -214,11 +207,13 @@ get_header(); ?>
                            </div>
                         </main>
                         <script>
-                           // THIS USES BROWSER'S OFFLINE EVENT
+                           // THIS USES BROWSER'S ONLINE EVENT
+                           // 
                            window.addEventListener('load', function () {
                               var status = document.getElementById("status");
                               //var log = document.getElementById("log");
                               function updateOnlineStatus(event) {
+                                 // detect change in online status and do something message and style wise...
                                  var condition = navigator.onLine ? "online" : "offline";
                                  if (condition === "offline") {
                                     //status.className = "offline";
@@ -227,11 +222,11 @@ get_header(); ?>
                                        condition.toUpperCase() +
                                        " - external links will not work but posts will...</span>";
                                     // set background to grey to emphasise offline
-                                    document.body.style.backgroundColor = "#fff";
+                                    document.querySelector('main').style.backgroundColor= "#eee";
                                  } else {
                                     status.className = "";
                                     status.innerHTML = "";
-                                    document.body.style.backgroundColor = "#fff";
+                                    document.querySelector('main').style.backgroundColor= "#fff";
                                  }
                               }
                               window.addEventListener('online', updateOnlineStatus);
