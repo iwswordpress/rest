@@ -47,6 +47,9 @@
                               var data;
                               // DO AJAX
                               fetch(url)
+                                 // This is ES6 syntax for functions
+                                 // we could use response function() {console.log} whih is 
+                                 // equivalent to response => {console.log}
                                  .then(response => {
                                     console.log("INITAL RESPONSE WILL BE A STREAM");
                                     console.log(response);
