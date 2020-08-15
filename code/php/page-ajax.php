@@ -62,12 +62,7 @@ get_header(); ?>
                                             console.log("We get back a STREAM initially...");
                                             console.log(response);
                                             return response.json();
-                                        }) // next...
-                                        .then(response => {
-                                            console.log("We get back a STREAM initially...");
-                                            console.log(response);
-                                            return response.json();
-                                        }) // next...
+                                        })
                                         .then(dataArray => {
                                             // Prints result from `response.json()` in get Request
                                             console.log("RESPONSE.JSON() is used to convert stream to JSON...");
@@ -79,16 +74,15 @@ get_header(); ?>
                                             outputData +=
                                                 '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
                                             for (let i = 0; i < dataArray.length; i++) {
-                                                outputData += "<tr><td>" + 
-                                                dataArray[i].id + "</td><td>" +
-                                                dataArray[i].title.rendered + "</td></tr>";
+                                                outputData += "<tr><td>" + dataArray[i].id + "</td><td>" +
+                                                    dataArray[i].title.rendered + "</td></tr>";
                                             }
                                             outputData += "</table>";
 
                                             const main = document.getElementById('mainContent');
                                             main.innerHTML = outputData;
 
-                                        }) // if there is an error...
+                                        })
                                         .catch(error => console.error(error))
                                 }
                                 // GET MySQL DATA

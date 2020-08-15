@@ -82,6 +82,7 @@ get_header(); ?>
                         formData.append('content', data);
                         formData.append('title', title);
                         formData.append('jwt', JWT); // to demonstrate additional hidden fields
+                        formData.append('action', 'delete'); // to demonstrate additional hidden fields
 
                         // Genereate URL
                         let apiUrl = '<?php echo $SITE; ?>' + 'wp-json/owt/v1/rest02';
